@@ -173,7 +173,7 @@
             <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
               <div class="px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/15 flex items-center gap-1.5 text-[11px] font-medium text-emerald-300">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Ставка: до +0.00030 USDT / показ</span>
+                <span data-i18n="hero_rate">Ставка: до +0.00030 USDT / показ</span>
               </div>
               <div id="streakBadge" class="px-2.5 py-1 rounded-full bg-indigo-950/85 backdrop-blur-md border border-indigo-400/30 text-[11px] font-bold text-indigo-300">
                 ⚡ Бонус x1.0
@@ -183,11 +183,11 @@
             <!-- Bottom Overlay Info -->
             <div class="absolute bottom-3 left-3.5 right-3.5 flex items-end justify-between">
               <div>
-                <p class="text-[11px] uppercase tracking-wider text-emerald-400 font-semibold">Терминал монетизации</p>
-                <h1 class="text-xl font-display font-bold text-white leading-tight">Смотри рекламу — получай USDT</h1>
+                <p data-i18n="hero_eyebrow" class="text-[11px] uppercase tracking-wider text-emerald-400 font-semibold">Терминал монетизации</p>
+                <h1 data-i18n="hero_title" class="text-xl font-display font-bold text-white leading-tight">Смотри рекламу — получай USDT</h1>
               </div>
               <div class="text-right bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
-                <div class="text-[10px] text-slate-400">Сегодня просмотрено</div>
+                <div data-i18n="hero_watched_today" class="text-[10px] text-slate-400">Сегодня просмотрено</div>
                 <div class="font-display font-bold text-sm text-white"><span id="dailyAdsCount">0</span> / <span id="dailyAdsLimit">50</span></div>
               </div>
             </div>
@@ -200,7 +200,7 @@
                 <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
                 </svg>
-                Дневной прогресс (бонус +0.00100 USDT за 10 реклам)
+                <span data-i18n="daily_progress_label">Дневной прогресс (бонус +0.00100 USDT за 10 реклам)</span>
               </span>
               <span id="dailyProgressPercent" class="text-emerald-400 font-bold">0%</span>
             </div>
@@ -217,7 +217,7 @@
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
               <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
             </svg>
-            <span>Перезарядка рекламного шлюза...</span>
+            <span data-i18n="cooldown_text">Перезарядка рекламного шлюза...</span>
           </div>
           <span id="cooldownTimerText" class="font-display font-bold">5 сек</span>
         </div>
@@ -234,11 +234,11 @@
                   <h2 class="font-bold text-sm text-white">AdsGram Network</h2>
                   <span class="px-2 py-0.5 text-[10px] rounded-full bg-indigo-500/20 text-indigo-300 font-semibold border border-indigo-500/30">TON Ads SDK</span>
                 </div>
-                <p class="text-xs text-slate-400">Официальная видеореклама Telegram Mini Apps</p>
+                <p data-i18n="adsgram_desc" class="text-xs text-slate-400">Официальная видеореклама Telegram Mini Apps</p>
               </div>
             </div>
             <div class="text-right">
-              <span class="text-[11px] text-slate-400 block">Просмотров</span>
+              <span data-i18n="views_label" class="text-[11px] text-slate-400 block">Просмотров</span>
               <span id="adsgramCountStat" class="font-display font-bold text-sm text-indigo-300">0</span>
             </div>
           </div>
@@ -254,7 +254,7 @@
                 <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
                 </svg>
-                <span>AdsGram Видео</span>
+                <span data-i18n="adsgram_video_btn">AdsGram Видео</span>
               </span>
               <span class="px-2 py-0.5 rounded-lg bg-black/30 font-display font-bold text-emerald-300 text-xs">+0.00025 ₮</span>
             </button>
@@ -269,7 +269,7 @@
                 <svg class="w-4 h-4 text-indigo-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
-                <span>AdsGram Баннер</span>
+                <span data-i18n="adsgram_banner_btn">AdsGram Баннер</span>
               </span>
               <span class="px-2 py-0.5 rounded-lg bg-indigo-500/20 font-display font-bold text-emerald-300 text-xs">+0.00015 ₮</span>
             </button>
@@ -288,11 +288,11 @@
                   <h2 class="font-bold text-sm text-white">Monetag TMA SDK</h2>
                   <span class="px-2 py-0.5 text-[10px] rounded-full bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/30">High CPM</span>
                 </div>
-                <p class="text-xs text-slate-400">Rewarded Interstitial &amp; Popup офферы</p>
+                <p data-i18n="monetag_desc" class="text-xs text-slate-400">Rewarded Interstitial &amp; Popup офферы</p>
               </div>
             </div>
             <div class="text-right">
-              <span class="text-[11px] text-slate-400 block">Просмотров</span>
+              <span data-i18n="views_label" class="text-[11px] text-slate-400 block">Просмотров</span>
               <span id="monetagCountStat" class="font-display font-bold text-sm text-amber-300">0</span>
             </div>
           </div>
@@ -337,8 +337,8 @@
               🎁
             </div>
             <div>
-              <h3 class="text-xs font-bold text-white">Ежедневный бонус активности</h3>
-              <p class="text-[11px] text-slate-400">Забирай награду каждые 24 часа</p>
+              <h3 data-i18n="daily_bonus_title" class="text-xs font-bold text-white">Ежедневный бонус активности</h3>
+              <p data-i18n="daily_bonus_desc" class="text-[11px] text-slate-400">Забирай награду каждые 24 часа</p>
             </div>
           </div>
           <button
@@ -359,12 +359,12 @@
         <div class="glass-card rounded-2xl p-4 border border-cyan-500/25 bg-gradient-to-br from-slate-900 via-slate-900 to-cyan-950/30">
           <div class="flex items-center justify-between">
             <div>
-              <span class="text-[11px] font-semibold uppercase tracking-wider text-cyan-400">Биржа заданий</span>
-              <h2 class="text-lg font-display font-bold text-white mt-0.5">Квесты за рекламу и кошелёк</h2>
-              <p class="text-xs text-slate-400 mt-0.5">Смотри рекламу, подключай TON-кошелёк и забирай бонусы в USDT</p>
+              <span data-i18n="tasks_eyebrow" class="text-[11px] font-semibold uppercase tracking-wider text-cyan-400">Биржа заданий</span>
+              <h2 data-i18n="tasks_title" class="text-lg font-display font-bold text-white mt-0.5">Квесты за рекламу и кошелёк</h2>
+              <p data-i18n="tasks_desc" class="text-xs text-slate-400 mt-0.5">Смотри рекламу, подключай TON-кошелёк и забирай бонусы в USDT</p>
             </div>
             <div class="text-right shrink-0 ml-3 bg-slate-950/70 px-3 py-2 rounded-xl border border-white/10">
-              <span class="text-[10px] text-slate-400 block">Выполнено</span>
+              <span data-i18n="tasks_completed_label" class="text-[10px] text-slate-400 block">Выполнено</span>
               <span id="tasksCompletedCounter" class="font-display font-bold text-base text-cyan-400">0 / 3</span>
             </div>
           </div>
@@ -372,13 +372,13 @@
           <!-- Category Filter Pills -->
           <div class="flex items-center gap-1.5 mt-3.5 overflow-x-auto pb-1">
             <button type="button" data-task-filter="all" class="task-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-500 text-slate-950 transition shrink-0">
-              Все задания
+              <span data-i18n="filter_all">Все задания</span>
             </button>
             <button type="button" data-task-filter="ads" class="task-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800/90 text-slate-300 hover:text-white transition shrink-0">
-              🎬 За просмотр рекламы
+              <span data-i18n="filter_ads">🎬 За просмотр рекламы</span>
             </button>
             <button type="button" data-task-filter="web3" class="task-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800/90 text-slate-300 hover:text-white transition shrink-0">
-              💎 Подключение кошелька
+              <span data-i18n="filter_web3">💎 Подключение кошелька</span>
             </button>
           </div>
         </div>
@@ -390,8 +390,8 @@
         <div class="glass-card rounded-2xl p-4 border border-purple-500/25 space-y-3">
           <div class="flex items-center justify-between">
             <div>
-              <h3 class="text-sm font-bold text-white">👥 Пригласи друзей в приложение</h3>
-              <p class="text-xs text-slate-400">Получай +0.100 USDT за друга и 15% от его просмотров AdsGram и Monetag</p>
+              <h3 data-i18n="ref_title" class="text-sm font-bold text-white">👥 Пригласи друзей в приложение</h3>
+              <p data-i18n="ref_desc" class="text-xs text-slate-400">Получай +0.100 USDT за друга и 15% от его просмотров AdsGram и Monetag</p>
             </div>
           </div>
           <div class="flex items-center gap-2">
@@ -407,7 +407,7 @@
               type="button"
               class="px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-xs font-bold text-white shrink-0 transition active:scale-95"
             >
-              Копировать
+              <span data-i18n="copy_btn">Копировать</span>
             </button>
           </div>
         </div>
@@ -422,7 +422,7 @@
           <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-emerald-500/10 blur-2xl pointer-events-none"></div>
           <div class="flex items-center justify-between">
             <div>
-              <span class="text-xs text-slate-400 font-medium">Доступный баланс для вывода</span>
+              <span data-i18n="profile_avail_bal" class="text-xs text-slate-400 font-medium">Доступный баланс для вывода</span>
               <div class="flex items-baseline gap-2 mt-1">
                 <span id="profileUsdtBalance" class="text-3xl font-display font-bold text-white">0.00250</span>
                 <span class="text-sm font-bold text-emerald-400">USDT</span>
@@ -434,8 +434,19 @@
             </div>
           </div>
 
+          <!-- Withdrawal Unlock Progress (50 Ads & 1.00 USDT) -->
+          <div class="mt-3.5 p-3 rounded-xl bg-slate-950/75 border border-white/10 space-y-2">
+            <div class="flex items-center justify-between text-[11px]">
+              <span data-i18n="withdraw_unlock_label" class="text-slate-300 font-medium">Доступ к выводу (мин. 50 реклам и 1.00 $)</span>
+              <span id="withdrawAdsUnlockText" class="font-display font-bold text-amber-300">0 / 50 реклам</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              <div id="withdrawAdsUnlockBar" class="h-full bg-gradient-to-r from-amber-400 to-emerald-400 rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+          </div>
+
           <!-- Withdraw Action Button -->
-          <div class="mt-4">
+          <div class="mt-3">
             <button
               id="openWithdrawModalBtn"
               type="button"
@@ -444,7 +455,7 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
               </svg>
-              <span>Вывести USDT</span>
+              <span id="openWithdrawBtnLabel">Вывести USDT</span>
             </button>
           </div>
         </div>
@@ -457,8 +468,8 @@
                 💎
               </div>
               <div>
-                <h2 class="text-sm font-bold text-white">Подключение TON-кошелька</h2>
-                <p class="text-xs text-slate-400">Tonkeeper, Tonhub и Telegram Wallet (@wallet)</p>
+                <h2 data-i18n="wallet_title" class="text-sm font-bold text-white">Подключение TON-кошелька</h2>
+                <p data-i18n="wallet_subtitle" class="text-xs text-slate-400">Tonkeeper, Tonhub и Telegram Wallet (@wallet)</p>
               </div>
             </div>
             <span id="walletConnectionStatusPill" class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-slate-800 text-slate-400 border border-white/10">
@@ -469,7 +480,7 @@
           <!-- Official TON Connect UI Root Container -->
           <div class="p-3 rounded-xl bg-slate-950/75 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
             <div class="text-xs text-slate-300">
-              <div class="font-semibold text-white">Официальная кнопка TON Connect 2.0</div>
+              <div data-i18n="ton_official_btn" class="font-semibold text-white">Официальная кнопка TON Connect 2.0</div>
               <div id="connectedWalletAddressDisplay" class="text-[11px] text-slate-400 font-mono mt-0.5">Выберите кошелёк ниже или нажмите TON Connect</div>
             </div>
             <div id="ton-connect-button-root" class="shrink-0"></div>
@@ -478,7 +489,7 @@
           <!-- Direct Wallet Quick-Connect Buttons (Tonkeeper, Tonhub, Telegram Wallet) -->
           <div class="space-y-2">
             <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-              Быстрое подключение (Манифест: Tonkeeper / Tonhub / TG Wallet)
+              <span data-i18n="wallet_quick_label">Быстрое подключение (Tonkeeper / Tonhub / TG Wallet)</span>
             </div>
             <div class="grid grid-cols-3 gap-2">
               <!-- Tonkeeper -->
@@ -530,7 +541,7 @@
               type="button"
               class="hidden w-full py-2 rounded-xl bg-rose-500/15 hover:bg-rose-500/25 border border-rose-500/30 text-xs font-semibold text-rose-300 transition"
             >
-              Отключить текущий кошелёк
+              <span data-i18n="wallet_disconnect">Отключить текущий кошелёк</span>
             </button>
           </div>
         </div>
@@ -543,31 +554,31 @@
             </div>
             <div class="min-w-0">
               <div class="flex items-center gap-1.5">
-                <span class="text-xs font-bold text-white">Антифрод-защита активна</span>
+                <span data-i18n="antifraud_title" class="text-xs font-bold text-white">Антифрод-защита активна</span>
                 <span id="securityStatusBadge" class="px-1.5 py-0.5 text-[9px] font-bold rounded bg-emerald-500/20 text-emerald-300">OK</span>
               </div>
               <div id="deviceFingerprintText" class="text-[10px] text-slate-400 font-mono truncate">Device ID: проверка...</div>
             </div>
           </div>
-          <span class="text-[10px] text-slate-400 text-right shrink-0">1 устройство =<br/>1 аккаунт</span>
+          <span data-i18n="antifraud_rule" class="text-[10px] text-slate-400 text-right shrink-0">1 устройство =<br/>1 аккаунт</span>
         </div>
 
         <!-- Statistics Grid -->
         <div class="grid grid-cols-2 gap-2.5">
           <div class="glass-card rounded-xl p-3.5 border border-white/5">
-            <span class="text-[11px] text-slate-400">Реклама AdsGram</span>
+            <span data-i18n="stat_adsgram" class="text-[11px] text-slate-400">Реклама AdsGram</span>
             <div id="profileAdsgramCount" class="text-lg font-display font-bold text-indigo-300 mt-0.5">0 показов</div>
           </div>
           <div class="glass-card rounded-xl p-3.5 border border-white/5">
-            <span class="text-[11px] text-slate-400">Реклама Monetag</span>
+            <span data-i18n="stat_monetag" class="text-[11px] text-slate-400">Реклама Monetag</span>
             <div id="profileMonetagCount" class="text-lg font-display font-bold text-amber-300 mt-0.5">0 показов</div>
           </div>
           <div class="glass-card rounded-xl p-3.5 border border-white/5">
-            <span class="text-[11px] text-slate-400">Выполнено заданий</span>
+            <span data-i18n="stat_tasks" class="text-[11px] text-slate-400">Выполнено заданий</span>
             <div id="profileTasksCount" class="text-lg font-display font-bold text-cyan-300 mt-0.5">0</div>
           </div>
           <div class="glass-card rounded-xl p-3.5 border border-white/5">
-            <span class="text-[11px] text-slate-400">Выведено средств</span>
+            <span data-i18n="stat_withdrawn" class="text-[11px] text-slate-400">Выведено средств</span>
             <div id="profileWithdrawnTotal" class="text-lg font-display font-bold text-emerald-400 mt-0.5">0.00000 ₮</div>
           </div>
         </div>
@@ -575,8 +586,8 @@
         <!-- Withdrawal & Earnings History -->
         <div class="glass-card rounded-2xl p-4 space-y-3 border border-white/10">
           <div class="flex items-center justify-between">
-            <h3 class="text-sm font-bold text-white">История начислений и выводов</h3>
-            <span id="historyCountBadge" class="text-[11px] text-slate-400">Последние операции</span>
+            <h3 data-i18n="history_title" class="text-sm font-bold text-white">История начислений и выводов</h3>
+            <span id="historyCountBadge" data-i18n="history_subtitle" class="text-[11px] text-slate-400">Последние операции</span>
           </div>
           <div id="transactionsHistoryList" class="space-y-2 max-h-60 overflow-y-auto pr-1"></div>
         </div>
@@ -598,7 +609,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span>Реклама</span>
+          <span data-i18n="nav_earn">Реклама</span>
         </button>
 
         <button
@@ -610,7 +621,7 @@
           <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
           </svg>
-          <span>Задания</span>
+          <span data-i18n="nav_tasks">Задания</span>
         </button>
 
         <button
@@ -622,7 +633,7 @@
           <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
           </svg>
-          <span>Профиль и Вывод</span>
+          <span data-i18n="nav_profile">Профиль и Вывод</span>
         </button>
       </div>
     </nav>
@@ -675,8 +686,8 @@
     <div class="w-full max-w-md rounded-t-3xl sm:rounded-2xl bg-[#111827] border border-white/15 p-5 space-y-4 shadow-2xl">
       <div class="flex items-center justify-between border-b border-white/10 pb-3">
         <div>
-          <h3 class="text-base font-display font-bold text-white">Вывод заработанных USDT</h3>
-          <p class="text-xs text-slate-400">Сеть: TON (USDT Jetton) • Минимальный вывод: 0.05000 USDT</p>
+          <h3 data-i18n="withdraw_modal_title" class="text-base font-display font-bold text-white">Вывод заработанных USDT</h3>
+          <p data-i18n="withdraw_modal_sub" class="text-xs text-slate-400">Сеть: TON (USDT Jetton) • Мин. вывод: 1.00000 USDT (от 50 реклам)</p>
         </div>
         <button id="closeWithdrawModalBtn" type="button" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
           ✕
@@ -685,7 +696,7 @@
 
       <div class="space-y-3">
         <div>
-          <label class="text-xs text-slate-300 font-medium block mb-1">Кошелёк получателя (Tonkeeper / Tonhub / TG Wallet)</label>
+          <label data-i18n="withdraw_addr_label" class="text-xs text-slate-300 font-medium block mb-1">Кошелёк получателя (Tonkeeper / Tonhub / TG Wallet)</label>
           <input
             id="withdrawAddressInput"
             type="text"
@@ -696,16 +707,16 @@
 
         <div>
           <div class="flex items-center justify-between mb-1">
-            <label class="text-xs text-slate-300 font-medium">Сумма вывода (USDT)</label>
+            <label data-i18n="withdraw_amount_label" class="text-xs text-slate-300 font-medium">Сумма вывода (USDT)</label>
             <span class="text-[11px] text-slate-400">Доступно: <strong id="withdrawAvailableLabel" class="text-emerald-400">0.00250 USDT</strong></span>
           </div>
           <div class="flex items-center gap-2">
             <input
               id="withdrawAmountInput"
               type="number"
-              step="0.0001"
-              min="0.05"
-              placeholder="0.05000"
+              step="0.01"
+              min="1.00"
+              placeholder="1.00000"
               class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-white/10 text-sm font-display font-bold text-white focus:border-emerald-400 focus:outline-none"
             />
             <button id="withdrawMaxBtn" type="button" class="px-3 py-2.5 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold shrink-0">
@@ -716,13 +727,17 @@
 
         <div class="p-3 rounded-xl bg-slate-900/90 border border-white/5 text-xs space-y-1 text-slate-400">
           <div class="flex justify-between">
-            <span>Комиссия шлюза:</span>
-            <span class="text-emerald-400 font-semibold">0.00 USDT (Покрывается приложением)</span>
+            <span data-i18n="withdraw_fee_label">Комиссия шлюза:</span>
+            <span data-i18n="withdraw_fee_val" class="text-emerald-400 font-semibold">0.00 USDT (Покрывается приложением)</span>
           </div>
           <div class="flex justify-between">
-            <span>К получению на кошелёк:</span>
+            <span data-i18n="withdraw_net_label">К получению на кошелёк:</span>
             <span id="withdrawNetReceive" class="text-white font-bold">0.00000 USDT</span>
           </div>
+        </div>
+
+        <div id="withdrawLockNotice" class="hidden p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-[11px] text-amber-300 font-medium">
+          🔒 Вывод откроется после просмотра 50 реклам (сейчас: <span id="modalAdsWatchedCount">0</span> / 50).
         </div>
 
         <button
@@ -730,76 +745,91 @@
           type="button"
           class="w-full py-3 rounded-xl btn-usdt font-bold text-sm text-white transition active:scale-95"
         >
-          Отправить заявку на вывод
+          <span data-i18n="withdraw_submit_btn">Отправить заявку на вывод</span>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- ==================== SDK & MANIFEST SETTINGS MODAL ==================== -->
+  <!-- ==================== USER SETTINGS MODAL ==================== -->
   <div id="sdkConfigModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4">
     <div class="w-full max-w-md rounded-t-3xl sm:rounded-2xl bg-[#111827] border border-white/15 p-5 space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-white/10 pb-3">
         <div>
-          <h3 class="text-base font-display font-bold text-white">Настройки интеграции SDK и Заданий</h3>
-          <p class="text-xs text-slate-400">Вставьте ваши ключи AdsGram, Monetag и URL манифеста</p>
+          <h3 data-i18n="settings_title" class="text-base font-display font-bold text-white">Настройки</h3>
+          <p data-i18n="settings_subtitle" class="text-xs text-slate-400">Язык интерфейса и статистика аккаунта</p>
         </div>
         <button id="closeSdkConfigBtn" type="button" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
           ✕
         </button>
       </div>
 
-      <div class="space-y-3 text-xs">
-        <div class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-between">
-          <div>
-            <div class="font-bold text-white">Демо-симулятор рекламы (для проверки с телефона)</div>
-            <div class="text-[11px] text-slate-300">Позволяет тестировать начисление USDT без боевого домена</div>
-          </div>
-          <input id="toggleDemoModeInput" type="checkbox" checked class="w-5 h-5 accent-emerald-500 rounded cursor-pointer" />
+      <!-- Language Selector (Russian / English) -->
+      <div class="space-y-2">
+        <div data-i18n="settings_lang_label" class="text-xs font-semibold text-slate-300">Язык приложения</div>
+        <div class="grid grid-cols-2 gap-2.5">
+          <button
+            id="langBtnRu"
+            type="button"
+            data-lang="ru"
+            class="lang-select-btn py-2.5 px-3 rounded-xl border font-bold text-xs flex items-center justify-center gap-2 transition active:scale-95 bg-emerald-500/20 border-emerald-500/50 text-emerald-300"
+          >
+            <span>🇷🇺</span>
+            <span>Русский</span>
+          </button>
+          <button
+            id="langBtnEn"
+            type="button"
+            data-lang="en"
+            class="lang-select-btn py-2.5 px-3 rounded-xl border font-bold text-xs flex items-center justify-center gap-2 transition active:scale-95 bg-slate-900 border-white/10 text-slate-300 hover:text-white"
+          >
+            <span>🇬🇧</span>
+            <span>English</span>
+          </button>
         </div>
-
-        <div>
-          <label class="text-slate-300 font-semibold block mb-1">AdsGram Block ID (например: int-4829)</label>
-          <input
-            id="inputAdsgramBlockId"
-            type="text"
-            placeholder="int-12345"
-            class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white font-mono"
-          />
-        </div>
-
-        <div>
-          <label class="text-slate-300 font-semibold block mb-1">Monetag Zone ID (например: 8492014)</label>
-          <input
-            id="inputMonetagZoneId"
-            type="text"
-            placeholder="8492014"
-            class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white font-mono"
-          />
-        </div>
-
-        <div>
-          <label class="text-slate-300 font-semibold block mb-1">TON Connect Manifest URL</label>
-          <input
-            id="inputManifestUrl"
-            type="text"
-            placeholder="https://ваш-домен.рф/tonconnect-manifest.json"
-            class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white font-mono"
-          />
-        </div>
-
-        <button
-          id="saveSdkConfigBtn"
-          type="button"
-          class="w-full py-3 rounded-xl btn-ton font-bold text-white text-sm mt-2 transition active:scale-95"
-        >
-          Сохранить настройки
-        </button>
       </div>
+
+      <!-- Account Overview inside Settings: Balance, Ads Watched, Invited Friends -->
+      <div class="space-y-2.5 pt-1">
+        <div data-i18n="settings_stats_label" class="text-xs font-semibold text-slate-300">Сводка аккаунта</div>
+
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-emerald-500/25 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 font-display font-bold flex items-center justify-center">₮</span>
+            <span data-i18n="settings_balance" class="text-xs font-medium text-slate-300">Текущий баланс</span>
+          </div>
+          <span id="settingsBalanceValue" class="font-display font-bold text-sm text-emerald-400">0.00250 USDT</span>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-indigo-500/25 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-300 flex items-center justify-center">🎬</span>
+            <span data-i18n="settings_ads_watched" class="text-xs font-medium text-slate-300">Просмотрено рекламы</span>
+          </div>
+          <span id="settingsAdsWatchedValue" class="font-display font-bold text-sm text-indigo-300">0</span>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-slate-950/80 border border-purple-500/25 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center">👥</span>
+            <span data-i18n="settings_invited_friends" class="text-xs font-medium text-slate-300">Приглашено друзей</span>
+          </div>
+          <span id="settingsInvitedFriendsValue" class="font-display font-bold text-sm text-purple-300">0</span>
+        </div>
+      </div>
+
+      <button
+        id="saveSdkConfigBtn"
+        type="button"
+        data-i18n="settings_close_btn"
+        class="w-full py-3 rounded-xl btn-ton font-bold text-white text-sm transition active:scale-95"
+      >
+        Готово
+      </button>
     </div>
   </div>
 
-    <!-- ==================== SECURITY / ANTI-MULTIACCOUNT LOCKOUT OVERLAY ==================== -->
+  <!-- ==================== SECURITY / ANTI-MULTIACCOUNT LOCKOUT OVERLAY ==================== -->
   <div id="securityLockOverlay" class="fixed inset-0 z-[60] hidden bg-[#060911]/95 backdrop-blur-lg flex items-center justify-center p-5">
     <div class="w-full max-w-sm rounded-2xl bg-slate-900 border border-rose-500/40 p-6 text-center space-y-4 shadow-2xl">
       <div class="w-16 h-16 mx-auto rounded-2xl bg-rose-500/15 border border-rose-500/30 flex items-center justify-center text-3xl">
@@ -837,20 +867,248 @@
         QUEST_5_ADS: 0.00050,
         QUEST_10_ADS: 0.00120,
         QUEST_CONNECT_WALLET: 0.10000,
-        MIN_WITHDRAW: 0.05000,
+        MIN_WITHDRAW: 1.00000,
+        MIN_ADS_FOR_WITHDRAW: 50,
         COOLDOWN_SEC: 4,
         AD_WATCH_MS: 3800
       });
 
       const SECURITY_SALT = "AdP_9xK#2026_TMA_Guard!v2";
 
-      // 1. Embedded TON Connect Manifest JSON & Explicit Wallets Configuration (Tonkeeper, Tonhub, Telegram Wallet)
+      // 1. Complete Bilingual Dictionary (RU / EN)
+      const I18N = {
+        ru: {
+          settings_title: "Настройки",
+          settings_subtitle: "Язык интерфейса и статистика аккаунта",
+          settings_lang_label: "Язык приложения",
+          settings_stats_label: "Сводка аккаунта",
+          settings_balance: "Текущий баланс",
+          settings_ads_watched: "Просмотрено рекламы",
+          settings_invited_friends: "Приглашено друзей",
+          settings_close_btn: "Готово",
+          hero_eyebrow: "Терминал монетизации",
+          hero_title: "Смотри рекламу — получай USDT",
+          hero_watched_today: "Сегодня просмотрено",
+          hero_rate: "Ставка: до +0.00030 USDT / показ",
+          daily_progress_label: "Дневной прогресс (бонус +0.00100 USDT за 10 реклам)",
+          cooldown_text: "Перезарядка рекламного шлюза...",
+          adsgram_desc: "Официальная видеореклама Telegram Mini Apps",
+          views_label: "Просмотров",
+          adsgram_video_btn: "AdsGram Видео",
+          adsgram_banner_btn: "AdsGram Баннер",
+          monetag_desc: "Rewarded Interstitial & Popup офферы",
+          daily_bonus_title: "Ежедневный бонус активности",
+          daily_bonus_desc: "Забирай награду каждые 24 часа",
+          tasks_eyebrow: "Биржа заданий",
+          tasks_title: "Квесты за рекламу и кошелёк",
+          tasks_desc: "Смотри рекламу, подключай TON-кошелёк и забирай бонусы в USDT",
+          tasks_completed_label: "Выполнено",
+          filter_all: "Все задания",
+          filter_ads: "🎬 За просмотр рекламы",
+          filter_web3: "💎 Подключение кошелька",
+          ref_title: "👥 Пригласи друзей в приложение",
+          ref_desc: "Получай +0.100 USDT за друга и 15% от его просмотров AdsGram и Monetag",
+          copy_btn: "Копировать",
+          profile_avail_bal: "Доступный баланс для вывода",
+          withdraw_unlock_label: "Доступ к выводу (мин. 50 реклам и 1.00 $)",
+          wallet_title: "Подключение TON-кошелька",
+          wallet_subtitle: "Tonkeeper, Tonhub и Telegram Wallet (@wallet)",
+          ton_official_btn: "Официальная кнопка TON Connect 2.0",
+          wallet_quick_label: "Быстрое подключение (Tonkeeper / Tonhub / TG Wallet)",
+          wallet_disconnect: "Отключить текущий кошелёк",
+          antifraud_title: "Антифрод-защита активна",
+          antifraud_rule: "1 устройство = 1 аккаунт",
+          stat_adsgram: "Реклама AdsGram",
+          stat_monetag: "Реклама Monetag",
+          stat_tasks: "Выполнено заданий",
+          stat_withdrawn: "Выведено средств",
+          history_title: "История начислений и выводов",
+          history_subtitle: "Последние операции",
+          nav_earn: "Реклама",
+          nav_tasks: "Задания",
+          nav_profile: "Профиль и Вывод",
+          withdraw_modal_title: "Вывод заработанных USDT",
+          withdraw_modal_sub: "Сеть: TON (USDT Jetton) • Мин. вывод: 1.00000 USDT (от 50 реклам)",
+          withdraw_addr_label: "Кошелёк получателя (Tonkeeper / Tonhub / TG Wallet)",
+          withdraw_amount_label: "Сумма вывода (USDT)",
+          withdraw_fee_label: "Комиссия шлюза:",
+          withdraw_fee_val: "0.00 USDT (Покрывается приложением)",
+          withdraw_net_label: "К получению на кошелёк:",
+          withdraw_submit_btn: "Отправить заявку на вывод",
+          // Dynamic strings
+          wallet_not_connected: "Кошелёк не подключен",
+          status_not_connected: "Не подключен",
+          wallet_select_hint: "Выберите Tonkeeper, Tonhub или Telegram Wallet ниже",
+          wallet_connected_prefix: "Подключен:",
+          total_earned_prefix: "Всего заработано за всё время:",
+          streak_prefix: "⚡ Бонус x",
+          claimed_btn: "Получено ✓",
+          task_done_btn: "✓ Выполнено",
+          task_do_btn: "Выполнить",
+          of_word: "из",
+          views_word: "показов",
+          ads_word: "реклам",
+          opened_word: "Открыт",
+          withdraw_locked_btn: "Вывод закрыт (ещё {n} реклам)",
+          withdraw_open_btn: "Вывести USDT (от 1.00 $)",
+          available_label: "Доступно:",
+          device_id_prefix: "ID устройства:",
+          tamper_badge: "СБРОС ПОДМЕНЫ",
+          quest_5_title: "Посмотреть 5 рекламных роликов",
+          quest_5_sub: "Любые форматы AdsGram или Monetag",
+          quest_10_title: "Марафон: Посмотреть 10 реклам за день",
+          quest_10_sub: "Повышенный бонус активности",
+          quest_wallet_title: "Подключить кошелёк (Tonkeeper / Tonhub / TG Wallet)",
+          quest_wallet_sub: "Верификация адреса для моментальных выплат USDT",
+          tx_welcome: "Приветственный бонус регистрации",
+          sec_remaining: "сек",
+          ad_left: "Осталось:",
+          ad_counted: "Просмотр засчитан ✓",
+          ad_watching: "Просмотр",
+          ad_claim: "Забрать",
+          ad_reward_label: "Награда:",
+          ad_subtext: "Дождитесь окончания таймера, чтобы получить вознаграждение в USDT на баланс",
+          ad_headline_adsgram: "AdsGram: Топовые крипто-проекты в Telegram",
+          ad_headline_monetag: "Monetag Offer: Эксклюзивный Web3 Кошелёк",
+          toast_lang_switched: "Язык изменён на Русский",
+          toast_ref_copied: "Реферальная ссылка скопирована!",
+          toast_wallet_disconnected: "Кошелёк отключен",
+          toast_wallet_connected: "успешно подключен через TON Connect!",
+          toast_need_ads: "Посмотрите ещё {n} реклам(ы) для выполнения!",
+          toast_connect_wallet_first: "Подключите Tonkeeper, Tonhub или TG Wallet в профиле",
+          toast_task_done: "Задание выполнено! +{amt} USDT",
+          toast_daily_bonus: "Ежедневный бонус +{amt} USDT зачислен!",
+          toast_wait_cooldown: "Подождите {n} сек перед следующим показом",
+          toast_daily_limit: "Дневной лимит просмотров исчерпан!",
+          toast_need_50_ads: "Для вывода нужно посмотреть минимум 50 реклам (осталось {n})",
+          toast_enter_addr: "Укажите адрес TON-кошелька или подключите его в профиле!",
+          toast_min_withdraw: "Минимальная сумма вывода — 1.00000 USDT ($1)",
+          toast_low_balance: "Недостаточно средств на балансе USDT",
+          toast_withdraw_sent: "Заявка на вывод {amt} USDT отправлена!"
+        },
+        en: {
+          settings_title: "Settings",
+          settings_subtitle: "Interface language and account summary",
+          settings_lang_label: "App Language",
+          settings_stats_label: "Account Overview",
+          settings_balance: "Current Balance",
+          settings_ads_watched: "Ads Watched",
+          settings_invited_friends: "Invited Friends",
+          settings_close_btn: "Done",
+          hero_eyebrow: "Monetization Terminal",
+          hero_title: "Watch Ads — Earn USDT",
+          hero_watched_today: "Watched today",
+          hero_rate: "Rate: up to +0.00030 USDT / view",
+          daily_progress_label: "Daily progress (+0.00100 USDT bonus per 10 ads)",
+          cooldown_text: "Ad gateway cooling down...",
+          adsgram_desc: "Official Telegram Mini Apps video ads",
+          views_label: "Views",
+          adsgram_video_btn: "AdsGram Video",
+          adsgram_banner_btn: "AdsGram Banner",
+          monetag_desc: "Rewarded Interstitial & Popup offers",
+          daily_bonus_title: "Daily Activity Bonus",
+          daily_bonus_desc: "Claim your reward every 24 hours",
+          tasks_eyebrow: "Task Hub",
+          tasks_title: "Ad & Wallet Quests",
+          tasks_desc: "Watch ads, connect a TON wallet, and claim USDT bonuses",
+          tasks_completed_label: "Completed",
+          filter_all: "All Tasks",
+          filter_ads: "🎬 Watch Ads",
+          filter_web3: "💎 Wallet Connect",
+          ref_title: "👥 Invite Friends",
+          ref_desc: "Earn +0.100 USDT per friend and 15% of their AdsGram & Monetag views",
+          copy_btn: "Copy",
+          profile_avail_bal: "Available Balance",
+          withdraw_unlock_label: "Withdrawal unlock (min. 50 ads & $1.00)",
+          wallet_title: "TON Wallet Connection",
+          wallet_subtitle: "Tonkeeper, Tonhub & Telegram Wallet (@wallet)",
+          ton_official_btn: "Official TON Connect 2.0 Button",
+          wallet_quick_label: "Quick Connect (Tonkeeper / Tonhub / TG Wallet)",
+          wallet_disconnect: "Disconnect Wallet",
+          antifraud_title: "Anti-Fraud Protection Active",
+          antifraud_rule: "1 device = 1 account",
+          stat_adsgram: "AdsGram Ads",
+          stat_monetag: "Monetag Ads",
+          stat_tasks: "Tasks Completed",
+          stat_withdrawn: "Total Withdrawn",
+          history_title: "Earnings & Withdrawal History",
+          history_subtitle: "Recent transactions",
+          nav_earn: "Earn",
+          nav_tasks: "Tasks",
+          nav_profile: "Profile",
+          withdraw_modal_title: "Withdraw Earned USDT",
+          withdraw_modal_sub: "Network: TON (USDT Jetton) • Min: 1.00000 USDT (50+ ads)",
+          withdraw_addr_label: "Recipient Wallet (Tonkeeper / Tonhub / TG Wallet)",
+          withdraw_amount_label: "Withdrawal Amount (USDT)",
+          withdraw_fee_label: "Gateway fee:",
+          withdraw_fee_val: "0.00 USDT (Covered by app)",
+          withdraw_net_label: "You will receive:",
+          withdraw_submit_btn: "Submit Withdrawal Request",
+          // Dynamic strings
+          wallet_not_connected: "Wallet not connected",
+          status_not_connected: "Not connected",
+          wallet_select_hint: "Select Tonkeeper, Tonhub or Telegram Wallet below",
+          wallet_connected_prefix: "Connected:",
+          total_earned_prefix: "Total lifetime earned:",
+          streak_prefix: "⚡ Bonus x",
+          claimed_btn: "Claimed ✓",
+          task_done_btn: "✓ Done",
+          task_do_btn: "Complete",
+          of_word: "of",
+          views_word: "views",
+          ads_word: "ads",
+          opened_word: "Unlocked",
+          withdraw_locked_btn: "Locked ({n} ads left)",
+          withdraw_open_btn: "Withdraw USDT (min $1.00)",
+          available_label: "Available:",
+          device_id_prefix: "Device ID:",
+          tamper_badge: "TAMPER RESET",
+          quest_5_title: "Watch 5 Ad Videos",
+          quest_5_sub: "Any AdsGram or Monetag formats",
+          quest_10_title: "Marathon: Watch 10 Ads Today",
+          quest_10_sub: "Boosted activity bonus",
+          quest_wallet_title: "Connect Wallet (Tonkeeper / Tonhub / TG Wallet)",
+          quest_wallet_sub: "Verify address for instant USDT payouts",
+          tx_welcome: "Welcome registration bonus",
+          sec_remaining: "s",
+          ad_left: "Left:",
+          ad_counted: "View verified ✓",
+          ad_watching: "Watching",
+          ad_claim: "Claim",
+          ad_reward_label: "Reward:",
+          ad_subtext: "Wait until the timer finishes to receive USDT in your balance",
+          ad_headline_adsgram: "AdsGram: Top Crypto Projects on Telegram",
+          ad_headline_monetag: "Monetag Offer: Exclusive Web3 Wallet",
+          toast_lang_switched: "Language switched to English",
+          toast_ref_copied: "Referral link copied!",
+          toast_wallet_disconnected: "Wallet disconnected",
+          toast_wallet_connected: "connected via TON Connect!",
+          toast_need_ads: "Watch {n} more ad(s) to complete!",
+          toast_connect_wallet_first: "Connect Tonkeeper, Tonhub or TG Wallet in Profile",
+          toast_task_done: "Task completed! +{amt} USDT",
+          toast_daily_bonus: "Daily bonus +{amt} USDT credited!",
+          toast_wait_cooldown: "Please wait {n}s before the next ad",
+          toast_daily_limit: "Daily ad limit reached!",
+          toast_need_50_ads: "Watch at least 50 ads to withdraw ({n} left)",
+          toast_enter_addr: "Enter a TON wallet address or connect in Profile!",
+          toast_min_withdraw: "Minimum withdrawal is 1.00000 USDT ($1)",
+          toast_low_balance: "Insufficient USDT balance",
+          toast_withdraw_sent: "Withdrawal request for {amt} USDT submitted!"
+        }
+      };
+
+      function t(key) {
+        const lang = state.language === "en" ? "en" : "ru";
+        return (I18N[lang] && I18N[lang][key]) || I18N.ru[key] || key;
+      }
+
+      // 2. Embedded TON Connect Manifest JSON & Explicit Wallets
       const EMBEDDED_TON_MANIFEST = Object.freeze({
-        url: "https://t.me/AdPulseUsdtBot/app",
+        url: "https://leshkasonin20-alt.github.io/AdPulse-USDTapp/",
         name: "AdPulse USDT Mini App",
         iconUrl: "https://ton.org/download/ton_symbol.png",
-        termsOfUseUrl: "https://ton.org/terms",
-        privacyPolicyUrl: "https://ton.org/privacy-policy"
+        termsOfUseUrl: "https://leshkasonin20-alt.github.io/AdPulse-USDTapp/",
+        privacyPolicyUrl: "https://leshkasonin20-alt.github.io/AdPulse-USDTapp/"
       });
 
       const EXPLICIT_TON_WALLETS = [
@@ -885,13 +1143,15 @@
 
       const embeddedManifestDataUri = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(EMBEDDED_TON_MANIFEST));
 
-      // 2. Default State (Reduced Ad & Task Rewards, Wallet Connect kept at 0.10000 USDT)
+      // 3. Default State
       const DEFAULT_STATE = {
+        language: "ru",
         usdtBalance: 0.00250,
         totalEarned: 0.00250,
         withdrawnTotal: 0.00000,
         adsgramViews: 0,
         monetagViews: 0,
+        invitedFriends: 0,
         dailyAdsWatched: 0,
         dailyAdsLimit: 50,
         dailyBonusClaimed: false,
@@ -905,13 +1165,13 @@
           demoMode: true,
           adsgramBlockId: "int-4829",
           monetagZoneId: "8492014",
-          manifestUrl: embeddedManifestDataUri
+          manifestUrl: "https://leshkasonin20-alt.github.io/AdPulse-USDTapp/tonconnect-manifest.json"
         },
         tasks: [
           {
             id: "quest_5_ads",
-            title: "Посмотреть 5 рекламных роликов",
-            subtitle: "Любые форматы AdsGram или Monetag",
+            titleKey: "quest_5_title",
+            subKey: "quest_5_sub",
             category: "ads",
             reward: REWARD_CONFIG.QUEST_5_ADS,
             requiredAds: 5,
@@ -919,8 +1179,8 @@
           },
           {
             id: "quest_10_ads",
-            title: "Марафон: Посмотреть 10 реклам за день",
-            subtitle: "Повышенный бонус активности",
+            titleKey: "quest_10_title",
+            subKey: "quest_10_sub",
             category: "ads",
             reward: REWARD_CONFIG.QUEST_10_ADS,
             requiredAds: 10,
@@ -928,8 +1188,8 @@
           },
           {
             id: "quest_connect_wallet",
-            title: "Подключить кошелёк (Tonkeeper / Tonhub / TG Wallet)",
-            subtitle: "Верификация адреса для моментальных выплат USDT",
+            titleKey: "quest_wallet_title",
+            subKey: "quest_wallet_sub",
             category: "web3",
             reward: REWARD_CONFIG.QUEST_CONNECT_WALLET,
             status: "idle"
@@ -938,10 +1198,10 @@
         transactions: [
           {
             id: "tx_init",
-            title: "Приветственный бонус регистрации",
+            titleKey: "tx_welcome",
             amount: "+0.00250 USDT",
             type: "credit",
-            time: "Сегодня"
+            time: "—"
           }
         ]
       };
@@ -957,7 +1217,7 @@
       let isDeviceLockedOut = false;
       let tamperDetected = false;
 
-      // 3. Security Utilities: Device Fingerprinting, Anti-Multiaccount & State Integrity Hash
+      // 4. Security Utilities: Device Fingerprinting, Anti-Multiaccount & State Integrity Hash
       function fnv1aHash(str) {
         let hash = 2166136261;
         for (let i = 0; i < str.length; i++) {
@@ -1004,6 +1264,7 @@
           String(st.adsgramViews),
           String(st.monetagViews),
           String(st.dailyAdsWatched),
+          String(st.invitedFriends || 0),
           String(st.boundAccountId || ""),
           String(st.deviceFingerprint || ""),
           SECURITY_SALT
@@ -1024,7 +1285,7 @@
       function isAntiAutoclickerBlocked() {
         const now = Date.now();
         if (now - lastClickAtMs < 350) {
-          showToast("Слишком частые нажатия! Подождите секунду.", "🛡️");
+          showToast(state.language === "en" ? "Too many clicks! Please wait." : "Слишком частые нажатия! Подождите секунду.", "🛡️");
           return true;
         }
         lastClickAtMs = now;
@@ -1044,7 +1305,9 @@
 
         if (storedOwner && currentTgUserId && storedOwner !== accountKey) {
           triggerSecurityLockout(
-            "Обнаружена попытка входа с другого Telegram-аккаунта на одном устройстве. Мультиаккаунтинг запрещён.",
+            state.language === "en"
+              ? "Another Telegram account was detected on this device. Multi-accounting is prohibited."
+              : "Обнаружена попытка входа с другого Telegram-аккаунта на одном устройстве. Мультиаккаунтинг запрещён.",
             "Device: " + fp + " | Bound: " + storedOwner + " | Current: " + accountKey
           );
           return false;
@@ -1060,7 +1323,7 @@
         return true;
       }
 
-      // 4. Safe Storage Load & Save with Integrity Checksum
+      // 5. Safe Storage Load & Save with Integrity Checksum
       function loadState() {
         const fp = computeDeviceFingerprint();
         try {
@@ -1073,20 +1336,12 @@
                 tamperDetected = true;
                 state = JSON.parse(JSON.stringify(DEFAULT_STATE));
                 state.deviceFingerprint = fp;
-                state.transactions.unshift({
-                  id: "tx_sec_" + Date.now(),
-                  title: "Сброс: обнаружена подмена данных",
-                  amount: "0.00000 USDT",
-                  type: "debit",
-                  time: "Система защиты"
-                });
                 saveState();
                 return;
               }
               const parsed = wrapper.data;
               state = Object.assign({}, DEFAULT_STATE, parsed);
               state.sdkConfig = Object.assign({}, DEFAULT_STATE.sdkConfig, parsed.sdkConfig || {});
-              // Filter out any legacy channel subscription tasks if present
               state.tasks = JSON.parse(JSON.stringify(DEFAULT_STATE.tasks)).map(function (defTask) {
                 const prev = Array.isArray(parsed.tasks) ? parsed.tasks.find(function (t) { return t.id === defTask.id; }) : null;
                 if (prev && prev.status === "completed") {
@@ -1109,12 +1364,36 @@
         try {
           const sig = computeStateSignature(state);
           localStorage.setItem("adpulse_tma_state_v2", JSON.stringify({ data: state, sig: sig }));
-        } catch (err) {
-          // Ignore storage errors in sandboxed preview
+        } catch (err) {}
+      }
+
+      // 6. Apply Language Across Entire UI
+      function applyLanguage() {
+        const lang = state.language === "en" ? "en" : "ru";
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          const key = el.getAttribute("data-i18n");
+          if (I18N[lang] && I18N[lang][key]) {
+            el.textContent = I18N[lang][key];
+          }
+        });
+
+        // Update Settings Language Toggle Buttons
+        const ruBtn = document.getElementById("langBtnRu");
+        const enBtn = document.getElementById("langBtnEn");
+        if (ruBtn && enBtn) {
+          if (lang === "ru") {
+            ruBtn.className = "lang-select-btn py-2.5 px-3 rounded-xl border font-bold text-xs flex items-center justify-center gap-2 transition active:scale-95 bg-emerald-500/20 border-emerald-500/50 text-emerald-300";
+            enBtn.className = "lang-select-btn py-2.5 px-3 rounded-xl border font-bold text-xs flex items-center justify-center gap-2 transition active:scale-95 bg-slate-900 border-white/10 text-slate-300 hover:text-white";
+          } else {
+            enBtn.className = "lang-select-btn py-2.5 px-3 rounded-xl border font-bold text-xs flex items-center justify-center gap-2 transition active:scale-95 bg-emerald-500/20 border-emerald-500/50 text-emerald-300";
+            ruBtn.className = "lang-select-btn py-2.5 px-3 rounded-xl border font-bold text-xs flex items-center justify-center gap-2 transition active:scale-95 bg-slate-900 border-white/10 text-slate-300 hover:text-white";
+          }
         }
       }
 
-      // 5. Toast Notification Helper
+      // 7. Toast Notification Helper
       let toastTimeout = null;
       function showToast(message, icon) {
         const container = document.getElementById("toastContainer");
@@ -1134,7 +1413,7 @@
         }, 2800);
       }
 
-      // 6. Initialize Telegram WebApp & User Profile + Multi-Account Check
+      // 8. Initialize Telegram WebApp & User Profile
       function initTelegramMiniApp() {
         let tgUserId = null;
         try {
@@ -1152,13 +1431,11 @@
               }
             }
           }
-        } catch (e) {
-          console.warn("Telegram WebApp init skipped:", e);
-        }
+        } catch (e) {}
         checkMultiAccountProtection(tgUserId);
       }
 
-      // 7. Initialize TON Connect UI with Embedded Manifest (Tonkeeper, Tonhub, Telegram Wallet)
+      // 9. Initialize TON Connect UI
       function initTonConnect() {
         try {
           if (window.TON_CONNECT_UI && window.TON_CONNECT_UI.TonConnectUI) {
@@ -1179,34 +1456,14 @@
                 state.connectedWalletAddress = shortAddr;
                 saveState();
                 renderAll();
-                showToast("Кошелёк " + appName + " подключен!", "💎");
+                showToast(appName + " " + t("toast_wallet_connected"), "💎");
               }
             });
           }
-        } catch (err) {
-          console.warn("TON Connect UI fallback mode active:", err);
-        }
+        } catch (err) {}
       }
 
-      // 8. Dynamic Monetag Script Loader
-      function ensureMonetagScriptLoaded(zoneId) {
-        if (!zoneId) return;
-        const scriptId = "monetag-sdk-script-" + zoneId;
-        if (document.getElementById(scriptId)) return;
-        try {
-          const s = document.createElement("script");
-          s.id = scriptId;
-          s.src = "https://libtl.com/sdk.js";
-          s.setAttribute("data-zone", String(zoneId));
-          s.setAttribute("data-sdk", "show_" + String(zoneId));
-          s.async = true;
-          document.head.appendChild(s);
-        } catch (e) {
-          console.warn("Could not inject Monetag script:", e);
-        }
-      }
-
-      // 9. Calculate Streak Multiplier
+      // 10. Calculate Streak Multiplier
       function getStreakMultiplier() {
         if (state.dailyAdsWatched >= 20) return 1.5;
         if (state.dailyAdsWatched >= 10) return 1.25;
@@ -1214,13 +1471,13 @@
         return 1.0;
       }
 
-      // 10. Start Ad Cooldown
+      // 11. Start Ad Cooldown
       function startCooldown(seconds) {
         cooldownSeconds = seconds;
         const banner = document.getElementById("cooldownBanner");
         const timerText = document.getElementById("cooldownTimerText");
         if (banner) banner.classList.remove("hidden");
-        if (timerText) timerText.textContent = cooldownSeconds + " сек";
+        if (timerText) timerText.textContent = cooldownSeconds + " " + t("sec_remaining");
 
         if (cooldownInterval) clearInterval(cooldownInterval);
         cooldownInterval = setInterval(function () {
@@ -1230,12 +1487,12 @@
             cooldownInterval = null;
             if (banner) banner.classList.add("hidden");
           } else if (timerText) {
-            timerText.textContent = cooldownSeconds + " сек";
+            timerText.textContent = cooldownSeconds + " " + t("sec_remaining");
           }
         }, 1000);
       }
 
-      // 11. Credit Ad Reward
+      // 12. Credit Ad Reward
       function creditAdReward(network, formatName, baseReward) {
         if (isDeviceLockedOut) return;
         const mult = getStreakMultiplier();
@@ -1263,16 +1520,16 @@
           title: network + " (" + formatName + ")",
           amount: "+" + finalReward.toFixed(5) + " USDT",
           type: "credit",
-          time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })
+          time: new Date().toLocaleTimeString(state.language === "en" ? "en-US" : "ru-RU", { hour: "2-digit", minute: "2-digit" })
         });
 
         if (milestoneBonus > 0) {
           state.transactions.unshift({
             id: "tx_bonus_" + Date.now(),
-            title: "Бонус за 10 просмотренных реклам",
+            title: state.language === "en" ? "10 Ads Milestone Bonus" : "Бонус за 10 просмотренных реклам",
             amount: "+" + milestoneBonus.toFixed(5) + " USDT",
             type: "credit",
-            time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })
+            time: new Date().toLocaleTimeString(state.language === "en" ? "en-US" : "ru-RU", { hour: "2-digit", minute: "2-digit" })
           });
         }
 
@@ -1280,14 +1537,10 @@
         renderAll();
         startCooldown(REWARD_CONFIG.COOLDOWN_SEC);
 
-        if (milestoneBonus > 0) {
-          showToast("Начислено +" + finalReward.toFixed(5) + " USDT + Бонус " + milestoneBonus.toFixed(5) + "!", "🎉");
-        } else {
-          showToast("Зачислено +" + finalReward.toFixed(5) + " USDT (" + network + ")", "₮");
-        }
+        showToast("+" + finalReward.toFixed(5) + " USDT (" + network + ")", "₮");
       }
 
-      // 12. Open Simulated / Demo Ad Player Modal with Real-Time Anti-Speedhack Check
+      // 13. Open Ad Player Modal
       function openDemoAdPlayer(network, formatName, baseReward) {
         const modal = document.getElementById("adPlayerModal");
         const badge = document.getElementById("adModalNetworkBadge");
@@ -1297,6 +1550,7 @@
         const rewardEl = document.getElementById("adModalRewardAmount");
         const claimBtn = document.getElementById("closeAndClaimAdBtn");
         const headlineEl = document.getElementById("adModalHeadline");
+        const subtextEl = document.getElementById("adModalSubtext");
 
         const mult = getStreakMultiplier();
         const finalReward = (baseReward * mult).toFixed(5);
@@ -1312,19 +1566,16 @@
         }
         if (formatLabel) formatLabel.textContent = formatName;
         if (rewardEl) rewardEl.textContent = "+" + finalReward + " USDT";
-        if (headlineEl) {
-          headlineEl.textContent = network === "AdsGram"
-            ? "AdsGram: Топовые крипто-проекты в Telegram"
-            : "Monetag Offer: Эксклюзивный Web3 Кошелёк";
-        }
+        if (headlineEl) headlineEl.textContent = network === "AdsGram" ? t("ad_headline_adsgram") : t("ad_headline_monetag");
+        if (subtextEl) subtextEl.textContent = t("ad_subtext");
 
         let remaining = 4;
         const total = 4;
-        if (timerPill) timerPill.textContent = "Осталось: " + remaining + " сек";
+        if (timerPill) timerPill.textContent = t("ad_left") + " " + remaining + " " + t("sec_remaining");
         if (progressBar) progressBar.style.width = "0%";
         if (claimBtn) {
           claimBtn.disabled = true;
-          claimBtn.textContent = "Просмотр (" + remaining + "с)...";
+          claimBtn.textContent = t("ad_watching") + " (" + remaining + t("sec_remaining") + ")...";
           claimBtn.className = "px-4 py-2.5 rounded-xl bg-slate-800 text-slate-500 font-bold text-xs transition";
         }
 
@@ -1339,79 +1590,49 @@
           if (remaining <= 0) {
             clearInterval(adWatchInterval);
             adWatchInterval = null;
-            if (timerPill) timerPill.textContent = "Просмотр засчитан ✓";
+            if (timerPill) timerPill.textContent = t("ad_counted");
             if (claimBtn) {
               claimBtn.disabled = false;
-              claimBtn.textContent = "Забрать +" + finalReward + " USDT";
+              claimBtn.textContent = t("ad_claim") + " +" + finalReward + " USDT";
               claimBtn.className = "px-4 py-2.5 rounded-xl btn-usdt text-white font-bold text-xs transition cursor-pointer active:scale-95";
             }
           } else {
-            if (timerPill) timerPill.textContent = "Осталось: " + remaining + " сек";
-            if (claimBtn) claimBtn.textContent = "Просмотр (" + remaining + "с)...";
+            if (timerPill) timerPill.textContent = t("ad_left") + " " + remaining + " " + t("sec_remaining");
+            if (claimBtn) claimBtn.textContent = t("ad_watching") + " (" + remaining + t("sec_remaining") + ")...";
           }
         }, 1000);
       }
 
-      // 13. Trigger AdsGram or Monetag Ad
+      // 14. Trigger Ad
       function triggerAd(network, formatName, baseReward) {
         if (isDeviceLockedOut || isAntiAutoclickerBlocked()) return;
         if (cooldownSeconds > 0) {
-          showToast("Подождите " + cooldownSeconds + " сек перед следующим показом", "⏳");
+          showToast(t("toast_wait_cooldown").replace("{n}", cooldownSeconds), "⏳");
           return;
         }
         if (state.dailyAdsWatched >= state.dailyAdsLimit) {
-          showToast("Дневной лимит просмотров исчерпан!", "⚠️");
+          showToast(t("toast_daily_limit"), "⚠️");
           return;
         }
 
-        if (!state.sdkConfig.demoMode) {
-          if (network === "AdsGram" && window.Adsgram && typeof window.Adsgram.init === "function") {
-            try {
-              const AdController = window.Adsgram.init({ blockId: state.sdkConfig.adsgramBlockId });
-              AdController.show().then(function () {
-                creditAdReward(network, formatName, baseReward);
-              }).catch(function () {
-                openDemoAdPlayer(network, formatName, baseReward);
-              });
-              return;
-            } catch (e) {
+        if (!state.sdkConfig.demoMode && network === "AdsGram" && window.Adsgram && typeof window.Adsgram.init === "function") {
+          try {
+            const AdController = window.Adsgram.init({ blockId: state.sdkConfig.adsgramBlockId });
+            AdController.show().then(function () {
+              creditAdReward(network, formatName, baseReward);
+            }).catch(function () {
               openDemoAdPlayer(network, formatName, baseReward);
-              return;
-            }
-          }
-
-          if (network === "Monetag") {
-            const fnName = "show_" + state.sdkConfig.monetagZoneId;
-            ensureMonetagScriptLoaded(state.sdkConfig.monetagZoneId);
-            if (typeof window[fnName] === "function") {
-              try {
-                const callPromise = formatName.indexOf("Popup") !== -1 ? window[fnName]("pop") : window[fnName]();
-                Promise.resolve(callPromise).then(function () {
-                  creditAdReward(network, formatName, baseReward);
-                }).catch(function () {
-                  openDemoAdPlayer(network, formatName, baseReward);
-                });
-                return;
-              } catch (e) {
-                openDemoAdPlayer(network, formatName, baseReward);
-                return;
-              }
-            }
-          }
+            });
+            return;
+          } catch (e) {}
         }
 
         openDemoAdPlayer(network, formatName, baseReward);
       }
 
-      // 14. Connect Wallet Handler (Tonkeeper, Tonhub, Telegram Wallet)
+      // 15. Connect Wallet Handler
       function connectWalletProvider(providerName, appKey) {
         if (isDeviceLockedOut || isAntiAutoclickerBlocked()) return;
-
-        if (tonConnectUIInstance && window.location.protocol.indexOf("http") === 0 && !state.sdkConfig.demoMode) {
-          try {
-            tonConnectUIInstance.openModal();
-          } catch (e) {}
-        }
 
         const sampleAddresses = {
           "tonkeeper": "UQBvTonkeeper89A4xK2L9mP0vR7zQ1wXyZ3_TK91",
@@ -1432,10 +1653,10 @@
 
         saveState();
         renderAll();
-        showToast(providerName + " успешно подключен через TON Connect!", "💎");
+        showToast(providerName + " " + t("toast_wallet_connected"), "💎");
       }
 
-      // 15. Handle Task Action (Ads Quests & Wallet Connection Only)
+      // 16. Handle Task Action
       function handleTaskAction(taskId) {
         if (isDeviceLockedOut || isAntiAutoclickerBlocked()) return;
         const task = state.tasks.find(function (t) { return t.id === taskId; });
@@ -1443,7 +1664,7 @@
 
         if (task.requiredAds) {
           if (state.dailyAdsWatched < task.requiredAds) {
-            showToast("Посмотрите ещё " + (task.requiredAds - state.dailyAdsWatched) + " реклам(ы) для выполнения!", "🎬");
+            showToast(t("toast_need_ads").replace("{n}", task.requiredAds - state.dailyAdsWatched), "🎬");
             return;
           }
           completeTaskAndCredit(task);
@@ -1453,7 +1674,7 @@
         if (task.id === "quest_connect_wallet") {
           if (!state.connectedWalletProvider) {
             switchTab("profile");
-            showToast("Подключите Tonkeeper, Tonhub или TG Wallet в профиле", "💎");
+            showToast(t("toast_connect_wallet_first"), "💎");
             return;
           }
           completeTaskAndCredit(task);
@@ -1465,20 +1686,21 @@
         state.usdtBalance = Number((state.usdtBalance + task.reward).toFixed(5));
         state.totalEarned = Number((state.totalEarned + task.reward).toFixed(5));
 
+        const titleText = task.titleKey ? t(task.titleKey) : (task.title || "");
         state.transactions.unshift({
           id: "tx_task_" + Date.now(),
-          title: "Задание: " + task.title,
+          title: titleText,
           amount: "+" + task.reward.toFixed(5) + " USDT",
           type: "credit",
-          time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })
+          time: new Date().toLocaleTimeString(state.language === "en" ? "en-US" : "ru-RU", { hour: "2-digit", minute: "2-digit" })
         });
 
         saveState();
         renderAll();
-        showToast("Задание выполнено! +" + task.reward.toFixed(5) + " USDT", "✅");
+        showToast(t("toast_task_done").replace("{amt}", task.reward.toFixed(5)), "✅");
       }
 
-      // 16. Clipboard Helper
+      // 17. Clipboard Helper
       function copyTextToClipboard(text) {
         try {
           if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -1494,11 +1716,10 @@
         } catch (e) {}
       }
 
-      // 17. Switch Active Tab
+      // 18. Switch Active Tab
       function switchTab(tabName) {
         state.activeTab = tabName;
-        const views = ["earn", "tasks", "profile"];
-        views.forEach(function (v) {
+        ["earn", "tasks", "profile"].forEach(function (v) {
           const el = document.getElementById("view-" + v);
           if (el) {
             if (v === tabName) el.classList.remove("hidden");
@@ -1506,8 +1727,7 @@
           }
         });
 
-        const navButtons = document.querySelectorAll(".bottom-nav-btn");
-        navButtons.forEach(function (btn) {
+        document.querySelectorAll(".bottom-nav-btn").forEach(function (btn) {
           const target = btn.getAttribute("data-tab-target");
           if (target === tabName) {
             btn.className = "bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-emerald-400 bg-emerald-500/10 font-semibold text-xs transition";
@@ -1517,7 +1737,7 @@
         });
       }
 
-      // 18. Render Tasks List
+      // 19. Render Tasks List
       function renderTasks() {
         const container = document.getElementById("tasksListContainer");
         const counterEl = document.getElementById("tasksCompletedCounter");
@@ -1539,16 +1759,15 @@
           card.className = "glass-card rounded-2xl p-3.5 flex items-center justify-between gap-3 border " +
             (task.status === "completed" ? "border-emerald-500/20 opacity-75" : "border-white/10");
 
-          const iconMap = {
-            ads: "🎬",
-            web3: "💎"
-          };
+          const iconMap = { ads: "🎬", web3: "💎" };
+          const titleText = task.titleKey ? t(task.titleKey) : (task.title || "");
+          const subText = task.subKey ? t(task.subKey) : (task.subtitle || "");
 
           let actionButtonHtml = "";
           if (task.status === "completed") {
-            actionButtonHtml = '<button type="button" disabled class="px-3 py-2 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-xs font-bold shrink-0">✓ Выполнено</button>';
+            actionButtonHtml = '<button type="button" disabled class="px-3 py-2 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-xs font-bold shrink-0">' + t("task_done_btn") + '</button>';
           } else {
-            actionButtonHtml = '<button type="button" data-task-id="' + task.id + '" class="task-action-btn px-3.5 py-2 rounded-xl btn-ton text-white text-xs font-bold shrink-0 transition active:scale-95">Выполнить</button>';
+            actionButtonHtml = '<button type="button" data-task-id="' + task.id + '" class="task-action-btn px-3.5 py-2 rounded-xl btn-ton text-white text-xs font-bold shrink-0 transition active:scale-95">' + t("task_do_btn") + '</button>';
           }
 
           card.innerHTML =
@@ -1557,8 +1776,8 @@
                 (iconMap[task.category] || "⭐") +
               '</div>' +
               '<div class="min-w-0">' +
-                '<h4 class="text-xs font-bold text-white truncate">' + task.title + '</h4>' +
-                '<p class="text-[11px] text-slate-400 truncate">' + task.subtitle + '</p>' +
+                '<h4 class="text-xs font-bold text-white truncate">' + titleText + '</h4>' +
+                '<p class="text-[11px] text-slate-400 truncate">' + subText + '</p>' +
                 '<div class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-300 font-display font-bold text-[11px]">' +
                   '+' + task.reward.toFixed(5) + ' USDT' +
                 '</div>' +
@@ -1571,13 +1790,12 @@
 
         container.querySelectorAll(".task-action-btn").forEach(function (btn) {
           btn.addEventListener("click", function () {
-            const id = btn.getAttribute("data-task-id");
-            handleTaskAction(id);
+            handleTaskAction(btn.getAttribute("data-task-id"));
           });
         });
       }
 
-      // 19. Render Transactions History
+      // 20. Render Transactions History
       function renderTransactions() {
         const listEl = document.getElementById("transactionsHistoryList");
         if (!listEl) return;
@@ -1587,6 +1805,7 @@
           const row = document.createElement("div");
           row.className = "p-2.5 rounded-xl bg-slate-900/90 border border-white/5 flex items-center justify-between text-xs";
           const isDebit = tx.type === "debit";
+          const titleText = tx.titleKey ? t(tx.titleKey) : (tx.title || "");
           row.innerHTML =
             '<div class="flex items-center gap-2.5 min-w-0">' +
               '<span class="w-7 h-7 rounded-lg flex items-center justify-center text-xs ' +
@@ -1594,7 +1813,7 @@
                 (isDebit ? '↗' : '₮') +
               '</span>' +
               '<div class="min-w-0">' +
-                '<div class="font-semibold text-slate-200 truncate">' + tx.title + '</div>' +
+                '<div class="font-semibold text-slate-200 truncate">' + titleText + '</div>' +
                 '<div class="text-[10px] text-slate-400">' + tx.time + '</div>' +
               '</div>' +
             '</div>' +
@@ -1605,9 +1824,13 @@
         });
       }
 
-      // 20. Master Render Function
+      // 21. Master Render Function
       function renderAll() {
+        applyLanguage();
+
         const formattedBal = state.usdtBalance.toFixed(5);
+        const totalAdsWatched = state.adsgramViews + state.monetagViews;
+
         const headerBal = document.getElementById("headerUsdtBalance");
         const profileBal = document.getElementById("profileUsdtBalance");
         const withdrawAvail = document.getElementById("withdrawAvailableLabel");
@@ -1616,14 +1839,22 @@
         if (headerBal) headerBal.textContent = formattedBal;
         if (profileBal) profileBal.textContent = formattedBal;
         if (withdrawAvail) withdrawAvail.textContent = formattedBal + " USDT";
-        if (totalEarnedEl) totalEarnedEl.textContent = "Всего заработано за всё время: " + state.totalEarned.toFixed(5) + " USDT";
+        if (totalEarnedEl) totalEarnedEl.textContent = t("total_earned_prefix") + " " + state.totalEarned.toFixed(5) + " USDT";
+
+        // Settings modal live stats
+        const setBalEl = document.getElementById("settingsBalanceValue");
+        const setAdsEl = document.getElementById("settingsAdsWatchedValue");
+        const setFriendsEl = document.getElementById("settingsInvitedFriendsValue");
+        if (setBalEl) setBalEl.textContent = formattedBal + " USDT";
+        if (setAdsEl) setAdsEl.textContent = String(totalAdsWatched);
+        if (setFriendsEl) setFriendsEl.textContent = String(state.invitedFriends || 0);
 
         // Security fingerprint display
         const fpEl = document.getElementById("deviceFingerprintText");
         const secBadge = document.getElementById("securityStatusBadge");
-        if (fpEl) fpEl.textContent = "ID устройства: " + (state.deviceFingerprint || "проверка...");
+        if (fpEl) fpEl.textContent = t("device_id_prefix") + " " + (state.deviceFingerprint || "...");
         if (secBadge && tamperDetected) {
-          secBadge.textContent = "СБРОС ПОДМЕНЫ";
+          secBadge.textContent = t("tamper_badge");
           secBadge.className = "px-1.5 py-0.5 text-[9px] font-bold rounded bg-amber-500/20 text-amber-300";
         }
 
@@ -1642,7 +1873,7 @@
         if (dailyBarEl) dailyBarEl.style.width = pct + "%";
 
         const mult = getStreakMultiplier();
-        if (streakBadge) streakBadge.textContent = "⚡ Бонус x" + mult.toFixed(2);
+        if (streakBadge) streakBadge.textContent = t("streak_prefix") + mult.toFixed(2);
 
         // Network stats
         const adsgramStat = document.getElementById("adsgramCountStat");
@@ -1654,18 +1885,18 @@
 
         if (adsgramStat) adsgramStat.textContent = String(state.adsgramViews);
         if (monetagStat) monetagStat.textContent = String(state.monetagViews);
-        if (profAdsgram) profAdsgram.textContent = state.adsgramViews + " показов";
-        if (profMonetag) profMonetag.textContent = state.monetagViews + " показов";
+        if (profAdsgram) profAdsgram.textContent = state.adsgramViews + " " + t("views_word");
+        if (profMonetag) profMonetag.textContent = state.monetagViews + " " + t("views_word");
 
         const completedTasks = state.tasks.filter(function (t) { return t.status === "completed"; }).length;
-        if (profTasks) profTasks.textContent = completedTasks + " из " + state.tasks.length;
+        if (profTasks) profTasks.textContent = completedTasks + " " + t("of_word") + " " + state.tasks.length;
         if (profWithdrawn) profWithdrawn.textContent = state.withdrawnTotal.toFixed(5) + " ₮";
 
         // Daily bonus button state
         const dailyBtn = document.getElementById("claimDailyBonusBtn");
         if (dailyBtn) {
           if (state.dailyBonusClaimed) {
-            dailyBtn.textContent = "Получено ✓";
+            dailyBtn.textContent = t("claimed_btn");
             dailyBtn.className = "px-3.5 py-2 rounded-xl bg-slate-800 text-slate-400 text-xs font-bold";
             dailyBtn.disabled = true;
           } else {
@@ -1687,23 +1918,54 @@
             walletPill.textContent = state.connectedWalletProvider;
             walletPill.className = "px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30";
           }
-          if (addrDisplay) addrDisplay.textContent = "Подключен: " + state.connectedWalletProvider + " (" + state.connectedWalletAddress + ")";
+          if (addrDisplay) addrDisplay.textContent = t("wallet_connected_prefix") + " " + state.connectedWalletProvider + " (" + state.connectedWalletAddress + ")";
           if (disconnectBtn) disconnectBtn.classList.remove("hidden");
         } else {
-          if (headerWalletBadge) headerWalletBadge.textContent = "Кошелёк не подключен";
+          if (headerWalletBadge) headerWalletBadge.textContent = t("wallet_not_connected");
           if (walletPill) {
-            walletPill.textContent = "Не подключен";
+            walletPill.textContent = t("status_not_connected");
             walletPill.className = "px-2.5 py-1 rounded-full text-[10px] font-bold bg-slate-800 text-slate-400 border border-white/10";
           }
-          if (addrDisplay) addrDisplay.textContent = "Выберите Tonkeeper, Tonhub или Telegram Wallet ниже";
+          if (addrDisplay) addrDisplay.textContent = t("wallet_select_hint");
           if (disconnectBtn) disconnectBtn.classList.add("hidden");
+        }
+
+        // Withdrawal 50-ads & 1.00 USDT unlock progress
+        const adsUnlockPct = Math.min(100, Math.round((totalAdsWatched / REWARD_CONFIG.MIN_ADS_FOR_WITHDRAW) * 100));
+        const unlockTextEl = document.getElementById("withdrawAdsUnlockText");
+        const unlockBarEl = document.getElementById("withdrawAdsUnlockBar");
+        const openWithdrawLabelEl = document.getElementById("openWithdrawBtnLabel");
+        const openWithdrawBtnEl = document.getElementById("openWithdrawModalBtn");
+        const withdrawLockNoticeEl = document.getElementById("withdrawLockNotice");
+        const modalAdsWatchedEl = document.getElementById("modalAdsWatchedCount");
+
+        if (unlockTextEl) {
+          if (totalAdsWatched >= REWARD_CONFIG.MIN_ADS_FOR_WITHDRAW) {
+            unlockTextEl.textContent = totalAdsWatched + " / 50 ✓ " + t("opened_word");
+            unlockTextEl.className = "font-display font-bold text-emerald-400";
+          } else {
+            unlockTextEl.textContent = totalAdsWatched + " / 50 " + t("ads_word");
+            unlockTextEl.className = "font-display font-bold text-amber-300";
+          }
+        }
+        if (unlockBarEl) unlockBarEl.style.width = adsUnlockPct + "%";
+        if (modalAdsWatchedEl) modalAdsWatchedEl.textContent = String(totalAdsWatched);
+
+        if (totalAdsWatched < REWARD_CONFIG.MIN_ADS_FOR_WITHDRAW) {
+          if (openWithdrawLabelEl) openWithdrawLabelEl.textContent = t("withdraw_locked_btn").replace("{n}", REWARD_CONFIG.MIN_ADS_FOR_WITHDRAW - totalAdsWatched);
+          if (openWithdrawBtnEl) openWithdrawBtnEl.className = "w-full bg-slate-800 border border-white/10 py-3 px-4 rounded-xl font-bold text-xs text-slate-300 flex items-center justify-center gap-2 transition active:scale-95";
+          if (withdrawLockNoticeEl) withdrawLockNoticeEl.classList.remove("hidden");
+        } else {
+          if (openWithdrawLabelEl) openWithdrawLabelEl.textContent = t("withdraw_open_btn");
+          if (openWithdrawBtnEl) openWithdrawBtnEl.className = "w-full btn-usdt py-3 px-4 rounded-xl font-bold text-xs text-white flex items-center justify-center gap-2 transition active:scale-95";
+          if (withdrawLockNoticeEl) withdrawLockNoticeEl.classList.add("hidden");
         }
 
         renderTasks();
         renderTransactions();
       }
 
-      // 21. Wire Up All Interactive Controls
+      // 22. Wire Up All Interactive Controls
       function bindEvents() {
         document.querySelectorAll(".bottom-nav-btn").forEach(function (btn) {
           btn.addEventListener("click", function () {
@@ -1719,7 +1981,7 @@
           });
         }
 
-        // AdsGram Buttons
+        // AdsGram & Monetag Buttons
         const btnAdsgramRewarded = document.getElementById("btnAdsgramRewarded");
         if (btnAdsgramRewarded) {
           btnAdsgramRewarded.addEventListener("click", function () {
@@ -1734,7 +1996,6 @@
           });
         }
 
-        // Monetag Buttons
         const btnMonetagInterstitial = document.getElementById("btnMonetagInterstitial");
         if (btnMonetagInterstitial) {
           btnMonetagInterstitial.addEventListener("click", function () {
@@ -1749,16 +2010,13 @@
           });
         }
 
-        // Claim Ad Modal Button with real-time anti-speedhack check
+        // Claim Ad Modal Button
         const closeAndClaimAdBtn = document.getElementById("closeAndClaimAdBtn");
         if (closeAndClaimAdBtn) {
           closeAndClaimAdBtn.addEventListener("click", function () {
             if (isDeviceLockedOut || isAntiAutoclickerBlocked()) return;
             const elapsed = Date.now() - adStartedAtMs;
-            if (elapsed < REWARD_CONFIG.AD_WATCH_MS) {
-              showToast("Обнаружено ускорение таймера! Просмотр не засчитан.", "🛡️");
-              return;
-            }
+            if (elapsed < REWARD_CONFIG.AD_WATCH_MS) return;
             const modal = document.getElementById("adPlayerModal");
             if (modal) modal.classList.add("hidden");
             if (pendingAdReward) {
@@ -1778,14 +2036,14 @@
             state.totalEarned = Number((state.totalEarned + REWARD_CONFIG.DAILY_BONUS).toFixed(5));
             state.transactions.unshift({
               id: "tx_daily_" + Date.now(),
-              title: "Ежедневный бонус активности",
+              titleKey: "daily_bonus_title",
               amount: "+" + REWARD_CONFIG.DAILY_BONUS.toFixed(5) + " USDT",
               type: "credit",
-              time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })
+              time: new Date().toLocaleTimeString(state.language === "en" ? "en-US" : "ru-RU", { hour: "2-digit", minute: "2-digit" })
             });
             saveState();
             renderAll();
-            showToast("Ежедневный бонус +" + REWARD_CONFIG.DAILY_BONUS.toFixed(5) + " USDT зачислен!", "🎁");
+            showToast(t("toast_daily_bonus").replace("{amt}", REWARD_CONFIG.DAILY_BONUS.toFixed(5)), "🎁");
           });
         }
 
@@ -1810,16 +2068,14 @@
           copyRefBtn.addEventListener("click", function () {
             const input = document.getElementById("referralLinkInput");
             if (input) copyTextToClipboard(input.value);
-            showToast("Реферальная ссылка скопирована!", "📋");
+            showToast(t("toast_ref_copied"), "📋");
           });
         }
 
-        // Wallet Provider Quick-Connect Cards (Tonkeeper, Tonhub, Telegram Wallet)
+        // Wallet Provider Quick-Connect Cards
         document.querySelectorAll(".wallet-connect-card").forEach(function (card) {
           card.addEventListener("click", function () {
-            const provider = card.getAttribute("data-wallet-provider");
-            const appKey = card.getAttribute("data-wallet-app");
-            connectWalletProvider(provider, appKey);
+            connectWalletProvider(card.getAttribute("data-wallet-provider"), card.getAttribute("data-wallet-app"));
           });
         });
 
@@ -1834,7 +2090,7 @@
             state.connectedWalletAddress = "";
             saveState();
             renderAll();
-            showToast("Кошелёк отключен", "🔌");
+            showToast(t("toast_wallet_disconnected"), "🔌");
           });
         }
 
@@ -1880,20 +2136,25 @@
         if (confirmWithdrawBtn) {
           confirmWithdrawBtn.addEventListener("click", function () {
             if (isDeviceLockedOut || isAntiAutoclickerBlocked()) return;
+            const totalAdsWatched = state.adsgramViews + state.monetagViews;
+            if (totalAdsWatched < REWARD_CONFIG.MIN_ADS_FOR_WITHDRAW) {
+              showToast(t("toast_need_50_ads").replace("{n}", REWARD_CONFIG.MIN_ADS_FOR_WITHDRAW - totalAdsWatched), "🔒");
+              return;
+            }
             const addrInput = document.getElementById("withdrawAddressInput");
             const address = addrInput ? addrInput.value.trim() : "";
             const amount = parseFloat(withdrawAmountInput ? withdrawAmountInput.value : "0") || 0;
 
             if (!address) {
-              showToast("Укажите адрес TON-кошелька или подключите его в профиле!", "⚠️");
+              showToast(t("toast_enter_addr"), "⚠️");
               return;
             }
             if (amount < REWARD_CONFIG.MIN_WITHDRAW) {
-              showToast("Минимальная сумма вывода — " + REWARD_CONFIG.MIN_WITHDRAW.toFixed(5) + " USDT", "⚠️");
+              showToast(t("toast_min_withdraw"), "⚠️");
               return;
             }
             if (amount > state.usdtBalance) {
-              showToast("Недостаточно средств на балансе USDT", "⚠️");
+              showToast(t("toast_low_balance"), "⚠️");
               return;
             }
 
@@ -1901,10 +2162,10 @@
             state.withdrawnTotal = Number((state.withdrawnTotal + amount).toFixed(5));
             state.transactions.unshift({
               id: "tx_withdraw_" + Date.now(),
-              title: "Вывод на " + (state.connectedWalletProvider || "TON") + " (" + address.slice(0, 6) + "...)",
+              title: (state.language === "en" ? "Withdraw to " : "Вывод на ") + (state.connectedWalletProvider || "TON") + " (" + address.slice(0, 6) + "...)",
               amount: "-" + amount.toFixed(5) + " USDT",
               type: "debit",
-              time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })
+              time: new Date().toLocaleTimeString(state.language === "en" ? "en-US" : "ru-RU", { hour: "2-digit", minute: "2-digit" })
             });
 
             if (withdrawAmountInput) withdrawAmountInput.value = "";
@@ -1913,11 +2174,11 @@
 
             saveState();
             renderAll();
-            showToast("Заявка на вывод " + amount.toFixed(5) + " USDT отправлена!", "🚀");
+            showToast(t("toast_withdraw_sent").replace("{amt}", amount.toFixed(5)), "🚀");
           });
         }
 
-        // SDK Config Modal Controls
+        // User Settings Modal Controls (Language Switcher + Account Stats)
         const openSdkBtn = document.getElementById("openSdkConfigBtn");
         const closeSdkBtn = document.getElementById("closeSdkConfigBtn");
         const sdkModal = document.getElementById("sdkConfigModal");
@@ -1925,11 +2186,7 @@
 
         if (openSdkBtn && sdkModal) {
           openSdkBtn.addEventListener("click", function () {
-            document.getElementById("toggleDemoModeInput").checked = !!state.sdkConfig.demoMode;
-            document.getElementById("inputAdsgramBlockId").value = state.sdkConfig.adsgramBlockId || "";
-            document.getElementById("inputMonetagZoneId").value = state.sdkConfig.monetagZoneId || "";
-            document.getElementById("inputManifestUrl").value =
-              state.sdkConfig.manifestUrl.indexOf("data:") === 0 ? "https://t.me/AdPulseUsdtBot/tonconnect-manifest.json" : state.sdkConfig.manifestUrl;
+            renderAll();
             sdkModal.classList.remove("hidden");
           });
         }
@@ -1942,19 +2199,22 @@
 
         if (saveSdkBtn && sdkModal) {
           saveSdkBtn.addEventListener("click", function () {
-            state.sdkConfig.demoMode = document.getElementById("toggleDemoModeInput").checked;
-            state.sdkConfig.adsgramBlockId = document.getElementById("inputAdsgramBlockId").value.trim() || "int-4829";
-            state.sdkConfig.monetagZoneId = document.getElementById("inputMonetagZoneId").value.trim() || "8492014";
-            const customManifest = document.getElementById("inputManifestUrl").value.trim();
-            if (customManifest) {
-              state.sdkConfig.manifestUrl = customManifest;
-            }
-            ensureMonetagScriptLoaded(state.sdkConfig.monetagZoneId);
-            saveState();
             sdkModal.classList.add("hidden");
-            showToast("Настройки SDK сохранены!", "⚙️");
           });
         }
+
+        // Language Switcher Buttons
+        document.querySelectorAll(".lang-select-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const newLang = btn.getAttribute("data-lang");
+            if (newLang === "ru" || newLang === "en") {
+              state.language = newLang;
+              saveState();
+              renderAll();
+              showToast(t("toast_lang_switched"), newLang === "ru" ? "🇷🇺" : "🇬🇧");
+            }
+          });
+        });
       }
 
       // Initialize App on Load
@@ -1964,9 +2224,6 @@
         initTonConnect();
         bindEvents();
         renderAll();
-        if (tamperDetected) {
-          showToast("Обнаружена попытка изменения данных! Баланс сброшен.", "🛡️");
-        }
       });
     })();
   </script>
