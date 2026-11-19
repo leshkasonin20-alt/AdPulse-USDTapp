@@ -8,6 +8,8 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <!-- AdsGram Official SDK -->
   <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+  <!-- Monetag TMA Official SDK (Zone 12299594) -->
+  <script src="https://libtl.com/sdk.js" data-zone="12299594" data-sdk="show_12299594"></script>
   <!-- TON Connect UI Official SDK -->
   <script src="https://unpkg.com/@tonconnect/ui@2.0.9/dist/tonconnect-ui.min.js"></script>
   <!-- Tailwind CSS -->
@@ -386,35 +388,90 @@
         <!-- Tasks Dynamic List Container -->
         <div id="tasksListContainer" class="space-y-2.5"></div>
 
-        <!-- Referral Invite Box inside Tasks -->
-        <div class="glass-card rounded-2xl p-4 border border-purple-500/25 space-y-3">
-          <div class="flex items-center justify-between">
+      </section>
+
+      <!-- ==================== TAB 3: FRIENDS / REFERRALS (ДРУЗЬЯ) ==================== -->
+      <section id="view-friends" class="hidden space-y-4">
+
+        <!-- Friends Hero Banner -->
+        <div class="glass-card rounded-2xl p-5 border border-purple-500/30 bg-gradient-to-br from-slate-900 via-slate-900 to-purple-950/40 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-2xl shrink-0">
+              👥
+            </div>
             <div>
-              <h3 data-i18n="ref_title" class="text-sm font-bold text-white">👥 Пригласи друзей в приложение</h3>
-              <p data-i18n="ref_desc" class="text-xs text-slate-400">Получай +0.100 USDT за друга и 15% от его просмотров AdsGram и Monetag</p>
+              <span data-i18n="friends_eyebrow" class="text-[11px] font-semibold uppercase tracking-wider text-purple-300">Партнёрская программа</span>
+              <h2 data-i18n="ref_title" class="text-lg font-display font-bold text-white leading-tight">Приглашай друзей и зарабатывай</h2>
             </div>
           </div>
+          <p data-i18n="friends_hero_desc" class="text-xs text-slate-300 leading-relaxed">
+            Делись персональной ссылкой с друзьями. Вы получаете бонус за каждого приглашённого друга и 15% от его заработка с рекламы AdsGram и Monetag!
+          </p>
+        </div>
+
+        <!-- Referral Stats Grid -->
+        <div class="grid grid-cols-2 gap-2.5">
+          <div class="glass-card rounded-xl p-3.5 border border-purple-500/20">
+            <span data-i18n="friends_count_label" class="text-[11px] text-slate-400">Приглашено друзей</span>
+            <div id="friendsPageCountValue" class="text-xl font-display font-bold text-purple-300 mt-0.5">0</div>
+          </div>
+          <div class="glass-card rounded-xl p-3.5 border border-emerald-500/20">
+            <span data-i18n="friends_earned_label" class="text-[11px] text-slate-400">Реферальный доход</span>
+            <div id="friendsPageEarnedValue" class="text-xl font-display font-bold text-emerald-400 mt-0.5">0.00000 ₮</div>
+          </div>
+        </div>
+
+        <!-- Referral Link & Share Card -->
+        <div class="glass-card rounded-2xl p-4 border border-purple-500/25 space-y-3">
+          <div data-i18n="friends_link_label" class="text-xs font-bold text-white">Ваша реферальная ссылка</div>
           <div class="flex items-center gap-2">
             <input
               id="referralLinkInput"
               type="text"
               readonly
-              value="https://t.me/AdPulseUsdtBot/app?startapp=ref_774920"
-              class="w-full px-3 py-2 rounded-xl bg-slate-950/90 border border-white/10 text-xs text-slate-300 font-mono focus:outline-none"
+              value="https://t.me/AdPulse_USDT_Bot/app?startapp=ref_774920"
+              class="w-full px-3 py-2.5 rounded-xl bg-slate-950/90 border border-white/10 text-xs text-slate-300 font-mono focus:outline-none"
             />
             <button
               id="copyReferralBtn"
               type="button"
-              class="px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-xs font-bold text-white shrink-0 transition active:scale-95"
+              class="px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-white/10 text-xs font-bold text-white shrink-0 transition active:scale-95"
             >
               <span data-i18n="copy_btn">Копировать</span>
             </button>
+          </div>
+          <button
+            id="shareReferralTgBtn"
+            type="button"
+            class="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-95 font-bold text-xs text-white flex items-center justify-center gap-2 shadow-lg shadow-purple-500/25 transition active:scale-95"
+          >
+            <span>✈️</span>
+            <span data-i18n="friends_share_btn">Отправить другу в Telegram</span>
+          </button>
+        </div>
+
+        <!-- How It Works Steps -->
+        <div class="glass-card rounded-2xl p-4 border border-white/10 space-y-2.5">
+          <h3 data-i18n="friends_rules_title" class="text-xs font-bold text-white uppercase tracking-wider">Как это работает</h3>
+          <div class="space-y-2 text-xs text-slate-300">
+            <div class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-purple-500/20 text-purple-300 font-bold text-[11px] flex items-center justify-center shrink-0">1</span>
+              <span data-i18n="friends_step_1">Скопируйте ссылку или нажмите «Отправить другу в Telegram».</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-purple-500/20 text-purple-300 font-bold text-[11px] flex items-center justify-center shrink-0">2</span>
+              <span data-i18n="friends_step_2">Друг запускает AdPulse USDT по вашей ссылке и смотрит рекламу.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-[11px] flex items-center justify-center shrink-0">3</span>
+              <span data-i18n="friends_step_3">Вы автоматически получаете 15% от его рекламных просмотров в USDT.</span>
+            </div>
           </div>
         </div>
 
       </section>
 
-      <!-- ==================== TAB 3: PROFILE & WALLET (ПРОФИЛЬ) ==================== -->
+      <!-- ==================== TAB 4: PROFILE & WALLET (ПРОФИЛЬ) ==================== -->
       <section id="view-profile" class="hidden space-y-4">
 
         <!-- Main USDT Balance & Withdrawal Card -->
@@ -597,13 +654,13 @@
     </main>
 
     <!-- Bottom Navigation Bar -->
-    <nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-30 glass-card border-t border-white/10 px-4 py-2">
-      <div class="grid grid-cols-3 gap-2">
+    <nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-30 glass-card border-t border-white/10 px-2.5 py-2">
+      <div class="grid grid-cols-4 gap-1.5">
         <button
           id="navBtnEarn"
           type="button"
           data-tab-target="earn"
-          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-emerald-400 bg-emerald-500/10 font-semibold text-xs transition"
+          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-emerald-400 bg-emerald-500/10 font-semibold text-[11px] transition"
         >
           <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -616,7 +673,7 @@
           id="navBtnTasks"
           type="button"
           data-tab-target="tasks"
-          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-xs transition relative"
+          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-[11px] transition relative"
         >
           <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -625,15 +682,27 @@
         </button>
 
         <button
+          id="navBtnFriends"
+          type="button"
+          data-tab-target="friends"
+          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-[11px] transition"
+        >
+          <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span data-i18n="nav_friends">Друзья</span>
+        </button>
+
+        <button
           id="navBtnProfile"
           type="button"
           data-tab-target="profile"
-          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-xs transition"
+          class="bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-[11px] transition"
         >
           <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
           </svg>
-          <span data-i18n="nav_profile">Профиль и Вывод</span>
+          <span data-i18n="nav_profile">Профиль</span>
         </button>
       </div>
     </nav>
@@ -926,7 +995,18 @@
           history_subtitle: "Последние операции",
           nav_earn: "Реклама",
           nav_tasks: "Задания",
-          nav_profile: "Профиль и Вывод",
+          nav_friends: "Друзья",
+          nav_profile: "Профиль",
+          friends_eyebrow: "Партнёрская программа",
+          friends_hero_desc: "Делись персональной ссылкой с друзьями. Вы получаете бонус за каждого приглашённого друга и 15% от его заработка с рекламы AdsGram и Monetag!",
+          friends_count_label: "Приглашено друзей",
+          friends_earned_label: "Реферальный доход",
+          friends_link_label: "Ваша реферальная ссылка",
+          friends_share_btn: "Отправить другу в Telegram",
+          friends_rules_title: "Как это работает",
+          friends_step_1: "Скопируйте ссылку или нажмите «Отправить другу в Telegram».",
+          friends_step_2: "Друг запускает AdPulse USDT по вашей ссылке и смотрит рекламу.",
+          friends_step_3: "Вы автоматически получаете 15% от его рекламных просмотров в USDT.",
           withdraw_modal_title: "Вывод заработанных USDT",
           withdraw_modal_sub: "Сеть: TON (USDT Jetton) • Мин. вывод: 1.00000 USDT (от 50 реклам)",
           withdraw_addr_label: "Кошелёк получателя (Tonkeeper / Tonhub / TG Wallet)",
@@ -1035,7 +1115,18 @@
           history_subtitle: "Recent transactions",
           nav_earn: "Earn",
           nav_tasks: "Tasks",
+          nav_friends: "Friends",
           nav_profile: "Profile",
+          friends_eyebrow: "Affiliate Program",
+          friends_hero_desc: "Share your personal link with friends. Earn a bonus for every invited friend plus 15% of their AdsGram and Monetag ad rewards!",
+          friends_count_label: "Invited Friends",
+          friends_earned_label: "Referral Earnings",
+          friends_link_label: "Your Referral Link",
+          friends_share_btn: "Share in Telegram",
+          friends_rules_title: "How It Works",
+          friends_step_1: "Copy your link or tap «Share in Telegram».",
+          friends_step_2: "Your friend launches AdPulse USDT via your link and watches ads.",
+          friends_step_3: "You automatically receive 15% of their ad views in USDT.",
           withdraw_modal_title: "Withdraw Earned USDT",
           withdraw_modal_sub: "Network: TON (USDT Jetton) • Min: 1.00000 USDT (50+ ads)",
           withdraw_addr_label: "Recipient Wallet (Tonkeeper / Tonhub / TG Wallet)",
@@ -1152,6 +1243,7 @@
         adsgramViews: 0,
         monetagViews: 0,
         invitedFriends: 0,
+        referralEarned: 0.00000,
         dailyAdsWatched: 0,
         dailyAdsLimit: 50,
         dailyBonusClaimed: false,
@@ -1162,9 +1254,10 @@
         boundAccountId: "",
         deviceFingerprint: "",
         sdkConfig: {
-          demoMode: true,
-          adsgramBlockId: "int-4829",
-          monetagZoneId: "8492014",
+          demoMode: false,
+          adsgramBlockId: "60661",
+          adsgramInterstitialBlockId: "int-60662",
+          monetagZoneId: "12299594",
           manifestUrl: "https://leshkasonin20-alt.github.io/AdPulse-USDTapp/tonconnect-manifest.json"
         },
         tasks: [
@@ -1341,7 +1434,7 @@
               }
               const parsed = wrapper.data;
               state = Object.assign({}, DEFAULT_STATE, parsed);
-              state.sdkConfig = Object.assign({}, DEFAULT_STATE.sdkConfig, parsed.sdkConfig || {});
+              state.sdkConfig = Object.assign({}, DEFAULT_STATE.sdkConfig);
               state.tasks = JSON.parse(JSON.stringify(DEFAULT_STATE.tasks)).map(function (defTask) {
                 const prev = Array.isArray(parsed.tasks) ? parsed.tasks.find(function (t) { return t.id === defTask.id; }) : null;
                 if (prev && prev.status === "completed") {
@@ -1360,10 +1453,80 @@
         state.deviceFingerprint = fp;
       }
 
+      function saveToTelegramCloud(sig) {
+        try {
+          const cs = window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.CloudStorage;
+          if (!cs || typeof cs.setItem !== "function") return;
+          const compact = {
+            language: state.language,
+            usdtBalance: state.usdtBalance,
+            totalEarned: state.totalEarned,
+            withdrawnTotal: state.withdrawnTotal,
+            adsgramViews: state.adsgramViews,
+            monetagViews: state.monetagViews,
+            invitedFriends: state.invitedFriends || 0,
+            referralEarned: state.referralEarned || 0,
+            dailyAdsWatched: state.dailyAdsWatched,
+            dailyBonusClaimed: state.dailyBonusClaimed,
+            connectedWalletProvider: state.connectedWalletProvider,
+            connectedWalletAddress: state.connectedWalletAddress,
+            boundAccountId: state.boundAccountId,
+            deviceFingerprint: state.deviceFingerprint,
+            completedTasks: state.tasks.filter(function (t) { return t.status === "completed"; }).map(function (t) { return t.id; }),
+            sig: sig
+          };
+          cs.setItem("adpulse_cloud_v2", JSON.stringify(compact), function () {});
+        } catch (e) {}
+      }
+
+      function syncFromTelegramCloud() {
+        try {
+          const cs = window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.CloudStorage;
+          if (!cs || typeof cs.getItem !== "function") return;
+          cs.getItem("adpulse_cloud_v2", function (err, raw) {
+            if (err || !raw) return;
+            try {
+              const cloud = JSON.parse(raw);
+              if (!cloud || !cloud.sig) return;
+              const expectedSig = computeStateSignature(cloud);
+              if (cloud.sig !== expectedSig) return;
+
+              const cloudAds = (cloud.adsgramViews || 0) + (cloud.monetagViews || 0);
+              const localAds = (state.adsgramViews || 0) + (state.monetagViews || 0);
+              if (cloudAds > localAds || (cloud.totalEarned || 0) > (state.totalEarned || 0)) {
+                state.language = cloud.language || state.language;
+                state.usdtBalance = Number(cloud.usdtBalance || 0);
+                state.totalEarned = Number(cloud.totalEarned || 0);
+                state.withdrawnTotal = Number(cloud.withdrawnTotal || 0);
+                state.adsgramViews = Number(cloud.adsgramViews || 0);
+                state.monetagViews = Number(cloud.monetagViews || 0);
+                state.invitedFriends = Number(cloud.invitedFriends || 0);
+                state.referralEarned = Number(cloud.referralEarned || 0);
+                state.dailyAdsWatched = Number(cloud.dailyAdsWatched || 0);
+                state.dailyBonusClaimed = !!cloud.dailyBonusClaimed;
+                state.connectedWalletProvider = cloud.connectedWalletProvider || null;
+                state.connectedWalletAddress = cloud.connectedWalletAddress || "";
+                if (Array.isArray(cloud.completedTasks)) {
+                  state.tasks.forEach(function (t) {
+                    if (cloud.completedTasks.indexOf(t.id) !== -1) {
+                      t.status = "completed";
+                    }
+                  });
+                }
+                const newSig = computeStateSignature(state);
+                localStorage.setItem("adpulse_tma_state_v2", JSON.stringify({ data: state, sig: newSig }));
+                renderAll();
+              }
+            } catch (e) {}
+          });
+        } catch (e) {}
+      }
+
       function saveState() {
         try {
           const sig = computeStateSignature(state);
           localStorage.setItem("adpulse_tma_state_v2", JSON.stringify({ data: state, sig: sig }));
+          saveToTelegramCloud(sig);
         } catch (err) {}
       }
 
@@ -1423,7 +1586,11 @@
             if (typeof tg.expand === "function") tg.expand();
             const user = tg.initDataUnsafe && tg.initDataUnsafe.user;
             if (user) {
-              if (user.id) tgUserId = user.id;
+              if (user.id) {
+                tgUserId = user.id;
+                const refIn = document.getElementById("referralLinkInput");
+                if (refIn) refIn.value = "https://t.me/AdPulse_USDT_Bot/app?startapp=ref_" + String(user.id);
+              }
               if (user.first_name || user.username) {
                 const displayName = user.first_name || user.username;
                 const nameEl = document.getElementById("headerUserName");
@@ -1615,13 +1782,32 @@
           return;
         }
 
-        if (!state.sdkConfig.demoMode && network === "AdsGram" && window.Adsgram && typeof window.Adsgram.init === "function") {
+        if (network === "Monetag") {
+          const fnName = "show_" + (state.sdkConfig.monetagZoneId || "12299594");
+          const monetagFn = window[fnName];
+          if (typeof monetagFn === "function") {
+            try {
+              const adPromise = formatName.indexOf("Popup") !== -1 ? monetagFn("pop") : monetagFn();
+              Promise.resolve(adPromise).then(function () {
+                creditAdReward(network, formatName, baseReward);
+              }).catch(function () {
+                showToast(state.language === "en" ? "Ad closed or unavailable. Try again." : "Реклама закрыта или временно недоступна.", "⚠️");
+              });
+              return;
+            } catch (e) {}
+          }
+        }
+
+        if (network === "AdsGram" && window.Adsgram && typeof window.Adsgram.init === "function") {
           try {
-            const AdController = window.Adsgram.init({ blockId: state.sdkConfig.adsgramBlockId });
+            const targetBlockId = formatName.indexOf("Interstitial") !== -1
+              ? (state.sdkConfig.adsgramInterstitialBlockId || "int-60662")
+              : (state.sdkConfig.adsgramBlockId || "60661");
+            const AdController = window.Adsgram.init({ blockId: targetBlockId });
             AdController.show().then(function () {
               creditAdReward(network, formatName, baseReward);
             }).catch(function () {
-              openDemoAdPlayer(network, formatName, baseReward);
+              showToast(state.language === "en" ? "Ad not completed or unavailable." : "Реклама не досмотрена или пока недоступна.", "⚠️");
             });
             return;
           } catch (e) {}
@@ -1719,7 +1905,7 @@
       // 18. Switch Active Tab
       function switchTab(tabName) {
         state.activeTab = tabName;
-        ["earn", "tasks", "profile"].forEach(function (v) {
+        ["earn", "tasks", "friends", "profile"].forEach(function (v) {
           const el = document.getElementById("view-" + v);
           if (el) {
             if (v === tabName) el.classList.remove("hidden");
@@ -1730,9 +1916,9 @@
         document.querySelectorAll(".bottom-nav-btn").forEach(function (btn) {
           const target = btn.getAttribute("data-tab-target");
           if (target === tabName) {
-            btn.className = "bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-emerald-400 bg-emerald-500/10 font-semibold text-xs transition";
+            btn.className = "bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-emerald-400 bg-emerald-500/10 font-semibold text-[11px] transition";
           } else {
-            btn.className = "bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-xs transition";
+            btn.className = "bottom-nav-btn flex flex-col items-center justify-center py-1.5 rounded-xl text-slate-400 hover:text-slate-200 font-semibold text-[11px] transition";
           }
         });
       }
@@ -1848,6 +2034,10 @@
         if (setBalEl) setBalEl.textContent = formattedBal + " USDT";
         if (setAdsEl) setAdsEl.textContent = String(totalAdsWatched);
         if (setFriendsEl) setFriendsEl.textContent = String(state.invitedFriends || 0);
+        const fCountEl = document.getElementById("friendsPageCountValue");
+        const fEarnedEl = document.getElementById("friendsPageEarnedValue");
+        if (fCountEl) fCountEl.textContent = String(state.invitedFriends || 0);
+        if (fEarnedEl) fEarnedEl.textContent = Number(state.referralEarned || 0).toFixed(5) + " ₮";
 
         // Security fingerprint display
         const fpEl = document.getElementById("deviceFingerprintText");
@@ -2072,6 +2262,26 @@
           });
         }
 
+        // Share Referral Link in Telegram
+        const shareRefBtn = document.getElementById("shareReferralTgBtn");
+        if (shareRefBtn) {
+          shareRefBtn.addEventListener("click", function () {
+            const input = document.getElementById("referralLinkInput");
+            const refUrl = input ? input.value : "https://t.me/AdPulse_USDT_Bot/app";
+            const shareText = state.language === "en"
+              ? "Watch short ads and earn USDT on TON!"
+              : "Смотри короткую рекламу и зарабатывай USDT в Telegram!";
+            const tgShareUrl = "https://t.me/share/url?url=" + encodeURIComponent(refUrl) + "&text=" + encodeURIComponent(shareText);
+            try {
+              if (window.Telegram && window.Telegram.WebApp && typeof window.Telegram.WebApp.openTelegramLink === "function") {
+                window.Telegram.WebApp.openTelegramLink(tgShareUrl);
+              } else {
+                window.open(tgShareUrl, "_blank", "noopener,noreferrer");
+              }
+            } catch (e) {}
+          });
+        }
+
         // Wallet Provider Quick-Connect Cards
         document.querySelectorAll(".wallet-connect-card").forEach(function (card) {
           card.addEventListener("click", function () {
@@ -2224,6 +2434,7 @@
         initTonConnect();
         bindEvents();
         renderAll();
+        syncFromTelegramCloud();
       });
     })();
   </script>
